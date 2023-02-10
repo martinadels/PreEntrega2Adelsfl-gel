@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: linear-gradient(to bottom,#061700,#52c234,#0f9b0f);
+}
+/* LOGO DE ARRIBA */
+.logo{
+    width: 35%;
+    height: 35%; 
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+} 
+
+
+/* MENU, no puedo hacerlo abajo  */
+/* tengo que hacer que el menu se quede fijo cuando baje */
+
+/* MENU */
+
+/* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+li, a, button{
+    font-family: 'Harmattan', sans-serif;
+    font-weight: 500px;
+    font-size: 28px;
+    color: rgb(245, 247, 243);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px 10%;
+    /* background-color: rgb(11, 50, 32); */
+}
+
+.navLinks{
+    list-style-type: none;
+}
+
+.navLinks li{
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a{
+   
+    text-transform:initial;
+}
+
+.navLinks li a:hover{
+    color: #5aa41d;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+   
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul{
+    list-style-type:none;
+    font-size: 0;
+} 
+
+
+ul ul{
+    position: absolute;
+    display:none;
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+
+/* CARRUSEL DE IMAGENES */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.slider-frame {
+	width: auto;
+    height: auto;
+	margin: none;
+	overflow: hidden;
+}
+
+.slider-frame ul  {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width:100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.slider-frame2 {
+	width: auto;
+    height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-frame2 ul {
+	display: flex;
+	padding: 0;
+    margin: 0;
+	width: 200%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame2 li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame2 img{
+	width:100%;
+    position: relative;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+
+} 
+
+/* TITULO PRINCIPAL DE TODAS LAS PAGINAS */
+.texto-principal{
+    position: absolute;
+    top: 585px;
+    left: 395px;
+    font-family: 'Staatliches', cursive;
+    color: rgb(99, 167, 108);
+    font-size: 25px;
+}
+/* MISMO H1 SOLO QUE CAMBIA LA POSICION ACORDE A LA PAGINA */
+.texto-principal2{
+    position: absolute;
+    top: 870px;
+    left: 385px;
+    font-family: 'Staatliches', cursive;
+    color: rgb(99, 167, 108);
+    font-size: 25px;
+}
+.information{
+    font-family: 'Fahkwang', sans-serif;
+    color: rgb(44, 171, 27);
+}
+
+.infolink{
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 12px;
+}
+/* FLEXBOX PARA LA INFORMACION */
+
+  .container{
+    margin: auto;
+    background-color: transparent;
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 2000px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:transparent;
+  }
+  
+  ul.slider li img{
+    width: 50%;
+    height: 300px;
+    /* object-fit: cover; */
+    right: 50%;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; 
+  }
+  
+  ul.slider li:target {
+      opacity: 1; 
+  }
+  /*NUMEROS DE INFORMACION PARA CARROUSEL EN INDEX */
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color:rgb(11, 50, 32);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    font-family: 'Harmattan', sans-serif;
+  }
+
+/* PAGINA INFORMACION */
+
+.tablaposiciones{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 800px;
+    top: 50px;
+}
+
+/* MEDIA EN INDEX*/
+.Media{
+    text-align:left;
+    color: whitesmoke;
+    font-family: 'Fahkwang', sans-serif;
+    color:rgb(44, 171, 27) ;
+
+}
+
+.medialink{
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 12px;
+}
+
+/* MEDIA EN SU PAGINA, FALTA QUE SE PUEDAN VER TODAS LAS FOTOS, CON FLEXBOX NO LO LOGRE. ALGO HICE MAL (REVISAR)*/
+
+.fotos{
+    padding: 0;
+    margin: 0;
+    width: 360px;
+    height: auto;
+    display: flex;
+
+}
+.sponsors{
+    color: rgb(44, 171, 27);
+    text-align: center;
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 25px;
+}
+
+/* FOOTER */
+/* Hecho con grid (se que no se evalua) */
+.pie-pagina{
+    width: 100%;
+    /* background-color: rgb(9, 35, 23); */
+    font-family: 'Harmattan', sans-serif;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 150%;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+.red-social{
+    color: white;
+    font-size: 1px;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(29, 137, 86);
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(11, 54, 6);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+/* PAGINA CONTACTO */
+
+.nombre{
+    text-align: center;
+}
+
+.formulario{
+    text-align: center;
+    font-family: 'Fahkwang', sans-serif;
+    font-size: medium;
+    color: white;
+    position: relative;
+    top: 50px;
+
+}
+/* MAPA */
+.map-responsive{
+    width: 500px;
+    height: 320px;
+    position: relative;
+    right: -35%;
+    top: 10px;
+}
+    
+
+
+/* LOG IN EN PAGINA JUGADOR, FALTA LINKEAR CADA ACCION DEL LOG IN */
+.login-box{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 10pxpx;
+    height: 100vh;
+    width: 320px;
+    height: 420px;
+    background:rgb(16, 73, 8);
+    position:absolute;
+    transform:translate(0% ,0%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    top: 60%;
+    right: 40%;
+    border-radius: 10%;
+}
+
+.login-box .defex{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50%-50px);
+    right: 35%;
+
+}
+
+.login-box h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.type1{
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size:16px ;
+
+}
+
+
+.type2{
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.submit{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(11, 50, 32);
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: grey;
+}
+
+.login-box a:hover{
+    color: white;
+}
+
+/* LISTA PLANTILLA DE JUGADORES, EN SU PAGINA. SOLO NOMBRES. FALTA VER COMO HACER PARA PODER PONER CADA JUGADOR CON SU IMAGEN Y POSICION */
+/* algo toque que hace que los nombres roten con las imagenes (REVISAR)*/
+.jugadores{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    list-style: none;
+    font-family: 'Harmattan', sans-serif;
+
+}
+
