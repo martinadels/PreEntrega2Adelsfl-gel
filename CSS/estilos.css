@@ -395,15 +395,79 @@ ul li:hover ul{
 
 
 /* LOG IN EN PAGINA JUGADOR, FALTA LINKEAR CADA ACCION DEL LOG IN */
-.login-box{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background: radial-gradient(#1bb22f,#2a7908,#033102);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.contenedor2{
+    font-size: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+.contenedor h2{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.control{
+    width: 100%;
+    background-color: #aeb7ac;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #0b8600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.boton{
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border:none;
+    color: white;
+    font-size: 20px;
+}
+
+.boton:hover{
+    cursor:pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.boton:active{
+    transform:translateY(3px);
+}
+
+.control:focus{
+    height: 60px;
+}
+
+
+.contenedor{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
     font-family: 'Fahkwang', sans-serif;
     font-size: 10pxpx;
     height: 100vh;
     width: 320px;
     height: 420px;
-    background:rgb(16, 73, 8);
     position:absolute;
     transform:translate(0% ,0%);
     box-sizing: border-box;
@@ -413,7 +477,7 @@ ul li:hover ul{
     border-radius: 10%;
 }
 
-.login-box .defex{
+.contenedor .defex{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -424,14 +488,14 @@ ul li:hover ul{
 
 }
 
-.login-box h2{
+/* .login-box h2{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
-}
+} */
 
-.login-box label{
+/* .login-box label{
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -442,9 +506,9 @@ ul li:hover ul{
     width: 100%;
     margin-bottom: 20px;
 
-}
+} */
 
-.type1{
+/* .type1{
     border: none;
     border-bottom: 1px solid #ffff;
     background: transparent;
@@ -453,10 +517,10 @@ ul li:hover ul{
     color: rgb(255, 255, 255);
     font-size:16px ;
 
-}
+} */
 
 
-.type2{
+/* .type2{
     border: none;
     border-bottom: 1px solid #ffff;
     background: transparent;
@@ -464,20 +528,20 @@ ul li:hover ul{
     height: 40px;
     color: #ffff;
     font-size: 16px;
-}
+} */
 
-.submit{
+.boton{
     border: none;
     outline: none;
     height: 40px;
     background: rgb(11, 50, 32);
     color: #ffff;
-    font-size: 18px;
-    border-radius: 20px;
+    font-size: 15px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.login-box a{
+/* .login-box a{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
@@ -486,7 +550,7 @@ ul li:hover ul{
 
 .login-box a:hover{
     color: white;
-}
+} */
 
 /* LISTA PLANTILLA DE JUGADORES, EN SU PAGINA. SOLO NOMBRES. FALTA VER COMO HACER PARA PODER PONER CADA JUGADOR CON SU IMAGEN Y POSICION */
 /* algo toque que hace que los nombres roten con las imagenes (REVISAR)*/
