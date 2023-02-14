@@ -5,15 +5,10 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #061700, #357822, #17de17);
+    background: linear-gradient(to bottom, #56ab2f,#061700, #357822, #17de17);
 }
 
-
-
-/* MENU, no puedo hacerlo abajo  */
-/* tengo que hacer que el menu se quede fijo cuando baje */
-
-/* NAVBAR    */
+/*--------- NAVBAR --------*/
 
 .logo {
     width: 60px;
@@ -42,27 +37,12 @@ li a {
     background-color: #0b8600;
 }
 
-/* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
 header {
     display: flex;
     justify-content: center;
 }
 
-
-
-
-
-
-
-/* CARRUSEL DE IMAGENES */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/* TITULO PRINCIPAL DE TODAS LAS PAGINAS */
+/* ------- TITULO PRINCIPAL DE TODAS LAS PAGINAS -------
 .texto-principal {
     position: absolute;
     top: 585px;
@@ -70,17 +50,18 @@ header {
     font-family: 'Staatliches', cursive;
     color: rgb(99, 167, 108);
     font-size: 25px;
-}
+} */
 
-/* MISMO H1 SOLO QUE CAMBIA LA POSICION ACORDE A LA PAGINA */
-.texto-principal2 {
+/* --------MISMO H1 SOLO QUE CAMBIA LA POSICION ACORDE A LA PAGINA --------*/
+/* TENGO PENSADO CAMBIAR EL H1 POR OTRA FORMA, TODAVIA NO PENSE EN LA CORRECTA */
+/* .texto-principal2 {
     position: absolute;
     top: 870px;
     left: 385px;
     font-family: 'Staatliches', cursive;
     color: rgb(99, 167, 108);
     font-size: 25px;
-}
+} */
 
 .information {
     font-family: 'Fahkwang', sans-serif;
@@ -92,53 +73,57 @@ header {
     font-size: 12px;
 }
 
-/* FLEXBOX PARA LA INFORMACION */
+/*------- FLEXBOX PARA LA INFORMACION --------*/
 
 .left-image {
     width: 80px;
-    
+
 }
+
 .right-image {
     width: 80px;
 }
 
-.tarjetasinfo{
+.tarjetasinfo {
+    width: 50rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin-left: 25%;
 }
 
 
-.card{
+.card {
     transition: 300ms ease-in-out;
-    background-color:#aeb7ac;
+    background-color: #aeb7ac;
 }
 
-.card + .card{
+.card+.card {
     margin-left: -10%;
 }
 
-.card:hover{
+.card:hover {
     transform: rotate(-4deg);
 }
 
-.card:hover ~ .card{
+.card:hover~.card {
     z-index: 1;
     translate: 60px;
 }
 
-/* PAGINA INFORMACION */
+/*-------- PAGINA INFORMACION --------*/
 
 .tablaposiciones {
     padding: 0;
     margin: 0;
+    margin-left: 160px;
     width: auto;
     height: 800px;
     top: 50px;
 }
 
-/* MEDIA EN INDEX*/
+/*------- MEDIA EN INDEX -------*/
 .Media {
     text-align: left;
     color: whitesmoke;
@@ -152,7 +137,7 @@ header {
     font-size: 12px;
 }
 
-/* MEDIA EN SU PAGINA, FALTA QUE SE PUEDAN VER TODAS LAS FOTOS, CON FLEXBOX NO LO LOGRE. ALGO HICE MAL (REVISAR)*/
+/* -------- MEDIA EN SU PAGINA, FALTA QUE SE PUEDAN VER TODAS LAS FOTOS, CON FLEXBOX NO LO LOGRE. ALGO HICE MAL (REVISAR) ---------*/
 
 .fotos {
     padding: 0;
@@ -170,8 +155,7 @@ header {
     font-size: 25px;
 }
 
-/* FOOTER */
-/* Hecho con grid (se que no se evalua) */
+/* ------ PIE DE PAGINA ------ */
 * {
     margin: 0;
     padding: 0;
@@ -179,7 +163,6 @@ header {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*:::::Pie de Pagina*/
 .pie-pagina {
     width: 100%;
     background: linear-gradient(to bottom, #061700, #357822, #17de17);
@@ -232,18 +215,22 @@ header {
     transition: all 300ms ease;
 } */
 
-.facebook{
+.facebook {
     width: 50px;
 }
-.instagram{
+
+.instagram {
     width: 50px;
 }
-.twitter{
+
+.twitter {
     width: 50px;
 }
-.youtube{
+
+.youtube {
     width: 50px;
 }
+
 .pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
@@ -268,7 +255,7 @@ header {
     }
 }
 
-/* PAGINA CONTACTO */
+/*-------- PAGINA CONTACTO -------- */
 
 .nombre {
     text-align: center;
@@ -281,21 +268,23 @@ header {
     color: white;
     position: relative;
     top: 50px;
+    margin-bottom: 40px;
 
 }
 
-/* MAPA */
+/*---------  MAPA --------- */
 .map-responsive {
     width: 500px;
     height: 320px;
     position: relative;
-    right: -35%;
+    right: -30%;
     top: 10px;
 }
 
 
 
-/* LOG IN EN PAGINA JUGADOR, FALTA LINKEAR CADA ACCION DEL LOG IN */
+
+/* ---------- LOG IN EN PAGINA JUGADOR, FALTA LINKEAR CADA ACCION DEL LOG IN ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
@@ -451,7 +440,7 @@ header {
     color: white;
 }
 
-/* LISTA PLANTILLA DE JUGADORES, EN SU PAGINA. SOLO NOMBRES. FALTA VER COMO HACER PARA PODER PONER CADA JUGADOR CON SU IMAGEN Y POSICION */
+/* -------- LISTA PLANTILLA DE JUGADORES, EN SU PAGINA. SOLO NOMBRES. FALTA VER COMO HACER PARA PODER PONER CADA JUGADOR CON SU IMAGEN Y POSICION(podria usar las cards que use para info index) --------- */
 /* algo toque que hace que los nombres roten con las imagenes (REVISAR)*/
 .jugadores {
     display: flex;
@@ -462,6 +451,464 @@ header {
 
 }
 
-@media only screen and (min-width: 1240px) {
-    
+
+/* -------- VISTA MOBILE -------- */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+
+    /* --------- NAVBAR PARA VISTA MOBILE --------- */
+    .logo {
+
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+
+    }
+
+    .fondoheader {
+        background-color: transparent;
+    }
+
+    li a {
+        text-transform: uppercase;
+        font-family: 'Harmattan', sans-serif;
+
+    }
+
+    .container-fluid {
+        font-size: 12px;
+    }
+
+    .colordropdown {
+        background-color: #0b8600;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+
+    /* ------- CARD IMAGES PARA VISTA MOBILE -------- */
+    .left-image {
+        width: 30px;
+
+    }
+
+    .right-image {
+        width: 30px;
+    }
+
+    .tarjetasinfo {
+        width: 20rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 6px;
+        margin-left: 25px;
+    }
+
+    .btn {
+        font-size: 8px;
+
+    }
+
+    .card {
+        transition: 300ms ease-in-out;
+        background-color: #aeb7ac;
+    }
+
+    .card+.card {
+        margin-left: -10%;
+    }
+
+    .card:hover {
+        transform: rotate(-4deg);
+    }
+
+    .card:hover~.card {
+        z-index: 1;
+        translate: 60px;
+    }
+
+    .card h5 {
+        position: relative;
+    }
+
+    .tablaposiciones {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: 800px;
+        top: 50px;
+    }
+
+
+    /* -------- PAGINA INFORMACION ---------*/
+
+    .tablaposiciones {
+        
+        margin-top: 20px;
+        margin-left: 90px;
+        height: 150px;
+    }
+
+    /* ---------- PAGINA CONTACTO ---------- */
+
+    .nombre {
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+        font-family: 'Fahkwang', sans-serif;
+        font-size: medium;
+        color: white;
+        position: relative;
+        top: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    /* MAPA */
+    .map-responsive {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        margin-left: 9rem;
+        top: 25px;
+    }
+
+
+    /* ---------- PIE DE PAGINA -----------*/
+
+    .pie-pagina .grupo-1 {
+        width: 5%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .pie-pagina {
+        width: 100%;
+        background: linear-gradient(to bottom, #061700, #357822, #17de17);
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* LOGO DEFENSORES PIE DE PAGINA */
+    .pie-pagina .grupo-1 .box figure img {
+        margin-top: 40px;
+        width: 35px;
+        border-radius: 50%;
+
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 0px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        color: #efefef;
+        margin-bottom: 10px;
+        font-size: 0px;
+    }
+
+    .facebook {
+        display: inline;
+        width: 35px;
+    }
+
+    .instagram {
+        width: 35px;
+    }
+
+    .twitter {
+        width: 35px;
+    }
+
+    .youtube {
+        width: 35px;
+        display: inline;
+
+    }
+
+    .pie-pagina .grupo-1 .red-social a:hover {
+        color: aqua;
+    }
+
+    .pie-pagina .grupo-2 {
+        background-color: #061700;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .pie-pagina .grupo-2 small {
+        font-size: 10px;
+    }
+
+    .pie-pagina {
+        height: -5px;
+    }
+}
+
+/* ------- VISTA TABLET -------- */
+@media only screen and (min-width: 768px) and (max-width: 1040px) {
+    .logo {
+
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+
+    }
+
+    .fondoheader {
+        background-color: transparent;
+    }
+
+    li a {
+        text-transform: uppercase;
+        font-family: 'Harmattan', sans-serif;
+
+    }
+
+    .container-fluid {
+        font-size: 20px;
+    }
+
+    .colordropdown {
+        background-color: #0b8600;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+
+    /* ------- CARD IMAGES PARA VISTA TABLET-------- */
+    .left-image {
+        width: 30px;
+
+    }
+
+    .right-image {
+        width: 30px;
+    }
+
+    .tarjetasinfo {
+        width: 35rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 6px;
+        margin-left: 100px;
+    }
+
+    .btn {
+        font-size: 8px;
+    }
+
+    .card {
+        transition: 300ms ease-in-out;
+        background-color: #aeb7ac;
+    }
+
+    .card+.card {
+        margin-left: -10%;
+    }
+
+    .card:hover {
+        transform: rotate(-4deg);
+    }
+
+    .card:hover~.card {
+        z-index: 1;
+        translate: 60px;
+    }
+
+    .card h5 {
+        position: relative;
+    }
+
+    .tablaposiciones {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: 800px;
+        top: 50px;
+    }
+
+
+    /* -------- PAGINA INFORMACION ---------*/
+
+    .tablaposiciones {
+        margin-top: 20px;
+        margin-left: 90px;
+        width: 50%;
+        height: 150px;
+    }
+
+    /* ---------- PAGINA CONTACTO ---------- */
+
+    .nombre {
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+        font-family: 'Fahkwang', sans-serif;
+        font-size: medium;
+        color: white;
+        position: relative;
+        top: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    /* MAPA */
+    .map-responsive {
+        width: 250px;
+        height: 200px;
+        position: relative;
+        right: -15%;
+        top: 25px;
+    }
+
+
+    /* ---------- PIE DE PAGINA -----------*/
+
+    .pie-pagina .grupo-1 {
+        width: 5%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .pie-pagina {
+        width: 100%;
+        background: linear-gradient(to bottom, #061700, #357822, #17de17);
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* LOGO DEFENSORES PIE DE PAGINA */
+    .pie-pagina .grupo-1 .box figure img {
+        margin-top: 40px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 0px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        color: #efefef;
+        margin-bottom: 10px;
+        font-size: 0px;
+    }
+
+    .facebook {
+        display: inline-block;
+        width: 60px;
+    }
+
+    .instagram {
+        width: 60px;
+    }
+
+    .twitter {
+        width: 60px;
+    }
+
+    .youtube {
+        margin-top: 5px;
+        width: 60px;
+        display: inline;
+
+    }
+
+    .pie-pagina .grupo-1 .red-social a:hover {
+        color: aqua;
+    }
+
+    .pie-pagina .grupo-2 {
+        background-color: #061700;
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .pie-pagina .grupo-2 small {
+        font-size: 10px;
+    }
+
+    .pie-pagina {
+        height: -5px;
+    }
 }
