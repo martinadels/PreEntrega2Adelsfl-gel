@@ -1,21 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
 
-body{
-    background: linear-gradient(to bottom,#061700,#357822,#17de17);
+body {
+    background: linear-gradient(to bottom, #061700, #357822, #17de17);
 }
-/* LOGO DE ARRIBA */
-.logo{
-    width: 35%;
-    height: 35%; 
-    cursor: pointer;
-    border-radius: 50%;
-    position: relative;
-    left: 50%;
-} 
+
 
 
 /* MENU, no puedo hacerlo abajo  */
@@ -23,11 +15,37 @@ body{
 
 /* NAVBAR    */
 
+.logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.fondoheader {
+    background-color: transparent;
+}
+
+li a {
+    text-transform: uppercase;
+    font-family: 'Harmattan', sans-serif;
+
+}
+
+.container-fluid {
+    font-size: 25px;
+}
+
+.colordropdown {
+    background-color: #0b8600;
+}
+
 /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
-header{
+header {
     display: flex;
     justify-content: center;
-
 }
 
 
@@ -45,7 +63,7 @@ header{
 
 
 /* TITULO PRINCIPAL DE TODAS LAS PAGINAS */
-.texto-principal{
+.texto-principal {
     position: absolute;
     top: 585px;
     left: 395px;
@@ -53,8 +71,9 @@ header{
     color: rgb(99, 167, 108);
     font-size: 25px;
 }
+
 /* MISMO H1 SOLO QUE CAMBIA LA POSICION ACORDE A LA PAGINA */
-.texto-principal2{
+.texto-principal2 {
     position: absolute;
     top: 870px;
     left: 385px;
@@ -62,52 +81,56 @@ header{
     color: rgb(99, 167, 108);
     font-size: 25px;
 }
-.information{
+
+.information {
     font-family: 'Fahkwang', sans-serif;
     color: rgb(44, 171, 27);
 }
 
-.infolink{
+.infolink {
     font-family: 'Fahkwang', sans-serif;
     font-size: 12px;
 }
+
 /* FLEXBOX PARA LA INFORMACION */
 
-  .container{
-    margin: auto;
-    background-color: transparent;
-    width: 800px;
-    padding: 30px;
-  }
-  
-  
-  /*NUMEROS DE INFORMACION PARA CARROUSEL EN INDEX */
-  .menu{
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .menu li{
-    display: inline-block;
-    text-align: center;
-  }
-  
-  .menu li a{
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color:rgb(11, 50, 32);
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-    font-family: 'Harmattan', sans-serif;
-  }
+.left-image {
+    width: 80px;
+    
+}
+.right-image {
+    width: 80px;
+}
+
+.tarjetasinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.card{
+    transition: 300ms ease-in-out;
+    background-color:#aeb7ac;
+}
+
+.card + .card{
+    margin-left: -10%;
+}
+
+.card:hover{
+    transform: rotate(-4deg);
+}
+
+.card:hover ~ .card{
+    z-index: 1;
+    translate: 60px;
+}
 
 /* PAGINA INFORMACION */
 
-.tablaposiciones{
+.tablaposiciones {
     padding: 0;
     margin: 0;
     width: auto;
@@ -116,22 +139,22 @@ header{
 }
 
 /* MEDIA EN INDEX*/
-.Media{
-    text-align:left;
+.Media {
+    text-align: left;
     color: whitesmoke;
     font-family: 'Fahkwang', sans-serif;
-    color:rgb(44, 171, 27) ;
+    color: rgb(44, 171, 27);
 
 }
 
-.medialink{
+.medialink {
     font-family: 'Fahkwang', sans-serif;
     font-size: 12px;
 }
 
 /* MEDIA EN SU PAGINA, FALTA QUE SE PUEDAN VER TODAS LAS FOTOS, CON FLEXBOX NO LO LOGRE. ALGO HICE MAL (REVISAR)*/
 
-.fotos{
+.fotos {
     padding: 0;
     margin: 0;
     width: 360px;
@@ -139,7 +162,8 @@ header{
     display: flex;
 
 }
-.sponsors{
+
+.sponsors {
     color: rgb(44, 171, 27);
     text-align: center;
     font-family: 'Fahkwang', sans-serif;
@@ -148,46 +172,54 @@ header{
 
 /* FOOTER */
 /* Hecho con grid (se que no se evalua) */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*:::::Pie de Pagina*/
-.pie-pagina{
+.pie-pagina {
     width: 100%;
-    background-color: #0a141d;
+    background: linear-gradient(to bottom, #061700, #357822, #17de17);
 }
-.pie-pagina .grupo-1{
+
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 150px;
+    border-radius: 50%;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+/* .pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -198,35 +230,51 @@ header{
     background-color: #0d2033;
     text-align: center;
     transition: all 300ms ease;
+} */
+
+.facebook{
+    width: 50px;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+.instagram{
+    width: 50px;
+}
+.twitter{
+    width: 50px;
+}
+.youtube{
+    width: 50px;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
-.pie-pagina .grupo-2{
-    background-color: #0a1a2a;
+
+.pie-pagina .grupo-2 {
+    background-color: #061700;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
+
+.pie-pagina .grupo-2 small {
+    font-size: 10px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
 
 /* PAGINA CONTACTO */
 
-.nombre{
+.nombre {
     text-align: center;
 }
 
-.formulario{
+.formulario {
     text-align: center;
     font-family: 'Fahkwang', sans-serif;
     font-size: medium;
@@ -235,27 +283,29 @@ header{
     top: 50px;
 
 }
+
 /* MAPA */
-.map-responsive{
+.map-responsive {
     width: 500px;
     height: 320px;
     position: relative;
     right: -35%;
     top: 10px;
 }
-    
+
 
 
 /* LOG IN EN PAGINA JUGADOR, FALTA LINKEAR CADA ACCION DEL LOG IN */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.contenedor{
-    background: radial-gradient(#1bb22f,#2a7908,#033102);
+.contenedor {
+    background: radial-gradient(#1bb22f, #2a7908, #033102);
     width: 400px;
     padding: 30px;
     margin: auto;
@@ -264,14 +314,15 @@ header{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-.contenedor h2{
+
+.contenedor h2 {
     font-size: 24px;
     margin-top: 15px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.control{
+.control {
     width: 100%;
     background-color: #aeb7ac;
     padding: 10px;
@@ -282,42 +333,42 @@ header{
     font-size: 18px;
 }
 
-.boton{
+.boton {
     width: 100%;
     height: 45px;
     margin-top: 15px;
     border-radius: 4px;
-    border:none;
+    border: none;
     color: white;
     font-size: 20px;
 }
 
-.boton:hover{
-    cursor:pointer;
+.boton:hover {
+    cursor: pointer;
     transform: translateY(-3px);
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
 }
 
-.boton:active{
-    transform:translateY(3px);
+.boton:active {
+    transform: translateY(3px);
 }
 
-.control:focus{
+.control:focus {
     height: 60px;
 }
 
 
-.contenedor{
+.contenedor {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Fahkwang', sans-serif;
     font-size: 10pxpx;
     height: 100vh;
     width: 320px;
     height: 420px;
-    position:absolute;
-    transform:translate(0% ,0%);
+    position: absolute;
+    transform: translate(0%, 0%);
     box-sizing: border-box;
     padding: 70px 30px;
     top: 60%;
@@ -325,7 +376,7 @@ header{
     border-radius: 10%;
 }
 
-.contenedor .defex{
+.contenedor .defex {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -378,7 +429,7 @@ header{
     font-size: 16px;
 } */
 
-.boton{
+.boton {
     border: none;
     outline: none;
     height: 40px;
@@ -389,20 +440,20 @@ header{
     cursor: pointer;
 }
 
-.login-box a{
+.login-box a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: grey;
 }
 
-.login-box a:hover{
+.login-box a:hover {
     color: white;
 }
 
 /* LISTA PLANTILLA DE JUGADORES, EN SU PAGINA. SOLO NOMBRES. FALTA VER COMO HACER PARA PODER PONER CADA JUGADOR CON SU IMAGEN Y POSICION */
 /* algo toque que hace que los nombres roten con las imagenes (REVISAR)*/
-.jugadores{
+.jugadores {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -411,6 +462,6 @@ header{
 
 }
 
-@media only screen and (min-width: 1240px){
+@media only screen and (min-width: 1240px) {
     
 }
