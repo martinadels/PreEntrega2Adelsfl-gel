@@ -116,11 +116,10 @@ header {
 
 .tablaposiciones {
     padding: 0;
-    margin: 0;
-    margin-left: 160px;
-    width: auto;
-    height: 800px;
-    top: 50px;
+    margin-left: 130px;
+    width: 80%;
+    height: 850px;
+    margin-top: 100px;
 }
 
 /*------- MEDIA EN INDEX -------*/
@@ -556,6 +555,7 @@ header {
         
         margin-top: 20px;
         margin-left: 90px;
+        width: 50%;
         height: 150px;
     }
 
@@ -580,8 +580,8 @@ header {
     .map-responsive {
         width: 250px;
         height: 200px;
-        position: absolute;
-        margin-left: 9rem;
+        position: relative;
+        margin-left: -50px;
         top: 25px;
     }
 
@@ -784,8 +784,8 @@ header {
     .tablaposiciones {
         margin-top: 20px;
         margin-left: 90px;
-        width: 50%;
-        height: 150px;
+        width: 75%;
+        height: 300px;
     }
 
     /* ---------- PAGINA CONTACTO ---------- */
@@ -807,10 +807,9 @@ header {
 
     /* MAPA */
     .map-responsive {
-        width: 250px;
+        width: 400px;
         height: 200px;
-        position: relative;
-        right: -15%;
+        right: -30%;
         top: 25px;
     }
 
