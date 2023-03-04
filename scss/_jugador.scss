@@ -1,0 +1,139 @@
+/*JUGADOR*/
+
+.contenedor {
+    background: radial-gradient(#1bb22f, #2a7908, #033102);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    font-family: $font-family_4;
+    color: $color_6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family_2;
+    font-size: 10pxpx;
+    height: 100vh;
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    transform: translate(0%, 0%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    top: 60%;
+    right: 40%;
+    border-radius: 10%;
+
+    h2 {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .defex {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        right: 35%;
+    }
+}
+
+.control {
+    width: 100%;
+    background-color: $background-color_3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #0b8600;
+    font-family: $font-family_4;
+    font-size: 18px;
+
+    &:focus {
+        height: 60px;
+    }
+}
+
+.boton {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: $color_6;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(11, 50, 32);
+    color: $color_7;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+}
+
+.login-box {
+    a {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: $color_8;
+
+        &:hover {
+            color: $color_6;
+        }
+    }
+}
+
+
+
+/* .login-box h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+} */
+/* .login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+
+} */
+/* .type1{
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size:16px ;
+
+} */
+/* .type2{
+    border: none;
+    border-bottom: 1px solid #ffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffff;
+    font-size: 16px;
+} */

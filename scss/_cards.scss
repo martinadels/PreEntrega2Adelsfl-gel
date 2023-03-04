@@ -1,0 +1,44 @@
+/*CARDS*/
+
+.left-image {
+    width: 80px;
+}
+
+.right-image {
+    width: 80px;
+}
+
+.tarjetasinfo {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 25%;
+}
+
+.card {
+    transition: 300ms ease-in-out;
+    background-color: $background-color_3;
+
+    &:hover {
+        transform: rotate(-4deg);
+    }
+
+    &:hover~.card {
+        z-index: 1;
+        translate: 60px;
+    }
+}
+
+.card+.card {
+    margin-left: -10%;
+}
+
+.tablaposiciones {
+    padding: 0;
+    margin-left: 130px;
+    width: 80%;
+    height: 850px;
+    margin-top: 100px;
+}

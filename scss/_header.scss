@@ -1,0 +1,40 @@
+//MIXIN
+
+@mixin anclas {
+    text-transform: uppercase;
+    font-family: $font-family_1;
+}
+
+
+/* HEADER */
+
+.logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fondoheader {
+    background-color: $background-color_1;
+}
+
+li {
+    a {
+        @include anclas
+    }
+}
+
+.container-fluid {
+    font-size: 25px;
+}
+
+.colordropdown {
+    background-color: $background-color_2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}

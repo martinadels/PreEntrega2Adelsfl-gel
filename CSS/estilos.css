@@ -1,378 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(to bottom, #56ab2f,#061700, #357822, #17de17);
+  background: linear-gradient(to bottom, #56ab2f, #061700, #357822, #17de17);
 }
 
-/*--------- NAVBAR --------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* HEADER */
 .logo {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    border-radius: 50%;
-    position: relative;
-
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
 }
 
 .fondoheader {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 li a {
-    text-transform: uppercase;
-    font-family: 'Harmattan', sans-serif;
-
+  text-transform: uppercase;
+  font-family: "Harmattan", sans-serif;
 }
 
 .container-fluid {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .colordropdown {
-    background-color: #0b8600;
+  background-color: #0b8600;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-/* ------- TITULO PRINCIPAL DE TODAS LAS PAGINAS -------
-.texto-principal {
-    position: absolute;
-    top: 585px;
-    left: 395px;
-    font-family: 'Staatliches', cursive;
-    color: rgb(99, 167, 108);
-    font-size: 25px;
-} */
-
-/* --------MISMO H1 SOLO QUE CAMBIA LA POSICION ACORDE A LA PAGINA --------*/
-/* TENGO PENSADO CAMBIAR EL H1 POR OTRA FORMA, TODAVIA NO PENSE EN LA CORRECTA */
-/* .texto-principal2 {
-    position: absolute;
-    top: 870px;
-    left: 385px;
-    font-family: 'Staatliches', cursive;
-    color: rgb(99, 167, 108);
-    font-size: 25px;
-} */
-
-.information {
-    font-family: 'Fahkwang', sans-serif;
-    color: rgb(44, 171, 27);
-}
-
-.infolink {
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 12px;
-}
-
-/*------- FLEXBOX PARA LA INFORMACION --------*/
-
+/*CARDS*/
 .left-image {
-    width: 80px;
-
+  width: 80px;
 }
 
 .right-image {
-    width: 80px;
+  width: 80px;
 }
 
 .tarjetasinfo {
-    width: 50rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    margin-left: 25%;
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 25%;
 }
-
 
 .card {
-    transition: 300ms ease-in-out;
-    background-color: #aeb7ac;
+  transition: 300ms ease-in-out;
+  background-color: #aeb7ac;
 }
-
-.card+.card {
-    margin-left: -10%;
-}
-
 .card:hover {
-    transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+.card:hover ~ .card {
+  z-index: 1;
+  translate: 60px;
 }
 
-.card:hover~.card {
-    z-index: 1;
-    translate: 60px;
+.card + .card {
+  margin-left: -10%;
 }
-
-/*-------- PAGINA INFORMACION --------*/
 
 .tablaposiciones {
-    padding: 0;
-    margin-left: 130px;
-    width: 80%;
-    height: 850px;
-    margin-top: 100px;
+  padding: 0;
+  margin-left: 130px;
+  width: 80%;
+  height: 850px;
+  margin-top: 100px;
 }
 
-/*------- MEDIA EN INDEX -------*/
-.Media {
-    text-align: left;
-    color: whitesmoke;
-    font-family: 'Fahkwang', sans-serif;
-    color: rgb(44, 171, 27);
-
-}
-
-.medialink {
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 12px;
-}
-
-/* -------- MEDIA EN SU PAGINA, FALTA QUE SE PUEDAN VER TODAS LAS FOTOS, CON FLEXBOX NO LO LOGRE. ALGO HICE MAL (REVISAR) ---------*/
-
-.fotos {
-    padding: 0;
-    margin: 0;
-    width: 360px;
-    height: auto;
-    display: flex;
-
-}
-
-.sponsors {
-    color: rgb(44, 171, 27);
-    text-align: center;
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 25px;
-}
-
-/* ------ PIE DE PAGINA ------ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
+/*FOOTER*/
 .pie-pagina {
-    width: 100%;
-    background: linear-gradient(to bottom, #061700, #357822, #17de17);
+  width: 100%;
+  background: linear-gradient(to bottom, #061700, #357822, #17de17);
 }
-
 .pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
 }
-
 .pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .pie-pagina .grupo-1 .box figure img {
-    width: 150px;
-    border-radius: 50%;
+  width: 150px;
+  border-radius: 50%;
 }
-
 .pie-pagina .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
 }
-
 .pie-pagina .grupo-1 .box p {
-    color: #efefef;
-    margin-bottom: 10px;
+  color: #efefef;
+  margin-bottom: 10px;
 }
-
-/* .pie-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
-} */
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #061700;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 10px;
+}
 
 .facebook {
-    width: 50px;
+  width: 50px;
 }
 
 .instagram {
-    width: 50px;
+  width: 50px;
 }
 
 .twitter {
-    width: 50px;
+  width: 50px;
 }
 
 .youtube {
-    width: 50px;
+  width: 50px;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
-}
-
-.pie-pagina .grupo-2 {
-    background-color: #061700;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-}
-
-.pie-pagina .grupo-2 small {
-    font-size: 10px;
-}
-
-@media screen and (max-width:800px) {
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-}
-
-/*-------- PAGINA CONTACTO -------- */
-
+/*CONTACTO*/
 .nombre {
-    text-align: center;
+  text-align: center;
 }
 
 .formulario {
-    text-align: center;
-    font-family: 'Fahkwang', sans-serif;
-    font-size: medium;
-    color: white;
-    position: relative;
-    top: 50px;
-    margin-bottom: 40px;
-
+  text-align: center;
+  font-family: "Fahkwang", sans-serif;
+  font-size: medium;
+  color: white;
+  position: relative;
+  top: 50px;
+  margin-bottom: 40px;
 }
 
-/*---------  MAPA --------- */
 .map-responsive {
-    width: 500px;
-    height: 320px;
-    position: relative;
-    right: -30%;
-    top: 10px;
+  width: 500px;
+  height: 320px;
+  position: relative;
+  right: -30%;
+  top: 10px;
 }
 
-
-
-
-/* ---------- LOG IN EN PAGINA JUGADOR, FALTA LINKEAR CADA ACCION DEL LOG IN ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/*JUGADOR*/
 .contenedor {
-    background: radial-gradient(#1bb22f, #2a7908, #033102);
-    width: 400px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 50px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  background: radial-gradient(#1bb22f, #2a7908, #033102);
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fahkwang", sans-serif;
+  font-size: 10pxpx;
+  height: 100vh;
+  width: 320px;
+  height: 420px;
+  position: absolute;
+  transform: translate(0%, 0%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  top: 60%;
+  right: 40%;
+  border-radius: 10%;
 }
-
 .contenedor h2 {
-    font-size: 24px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contenedor .defex {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  right: 35%;
 }
 
 .control {
-    width: 100%;
-    background-color: #aeb7ac;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    border: 1px solid #0b8600;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+  width: 100%;
+  background-color: #aeb7ac;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #0b8600;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.control:focus {
+  height: 60px;
 }
 
 .boton {
-    width: 100%;
-    height: 45px;
-    margin-top: 15px;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    font-size: 20px;
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: rgb(11, 50, 32);
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
 .boton:hover {
-    cursor: pointer;
-    transform: translateY(-3px);
-    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
-
 .boton:active {
-    transform: translateY(3px);
+  transform: translateY(3px);
 }
 
-.control:focus {
-    height: 60px;
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: grey;
 }
-
-
-.contenedor {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fahkwang', sans-serif;
-    font-size: 10pxpx;
-    height: 100vh;
-    width: 320px;
-    height: 420px;
-    position: absolute;
-    transform: translate(0%, 0%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    top: 60%;
-    right: 40%;
-    border-radius: 10%;
-}
-
-.contenedor .defex {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50%-50px);
-    right: 35%;
-
+.login-box a:hover {
+  color: white;
 }
 
 /* .login-box h2{
@@ -381,7 +270,6 @@ header {
     text-align: center;
     font-size: 22px;
 } */
-
 /* .login-box label{
     margin: 0;
     padding: 0;
@@ -394,7 +282,6 @@ header {
     margin-bottom: 20px;
 
 } */
-
 /* .type1{
     border: none;
     border-bottom: 1px solid #ffff;
@@ -405,8 +292,6 @@ header {
     font-size:16px ;
 
 } */
-
-
 /* .type2{
     border: none;
     border-bottom: 1px solid #ffff;
@@ -416,498 +301,341 @@ header {
     color: #ffff;
     font-size: 16px;
 } */
-
-.boton {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: rgb(11, 50, 32);
-    color: #ffff;
-    font-size: 15px;
-    border-radius: 5px;
+@media only screen and (min-width: 768px) and (max-width: 1040px) {
+  .logo {
+    width: 60px;
+    height: 60px;
     cursor: pointer;
-}
-
-.login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: grey;
-}
-
-.login-box a:hover {
-    color: white;
-}
-
-/* -------- LISTA PLANTILLA DE JUGADORES, EN SU PAGINA. SOLO NOMBRES. FALTA VER COMO HACER PARA PODER PONER CADA JUGADOR CON SU IMAGEN Y POSICION(podria usar las cards que use para info index) --------- */
-/* algo toque que hace que los nombres roten con las imagenes (REVISAR)*/
-.jugadores {
+    border-radius: 50%;
+    position: relative;
+  }
+  .fondoheader {
+    background-color: transparent;
+  }
+  li a {
+    text-transform: uppercase;
+    font-family: "Harmattan", sans-serif;
+  }
+  .container-fluid {
+    font-size: 20px;
+  }
+  .colordropdown {
+    background-color: #0b8600;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .left-image {
+    width: 30px;
+  }
+  .right-image {
+    width: 30px;
+  }
+  .tarjetasinfo {
+    width: 35rem;
+    height: 10rem;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    list-style: none;
-    font-family: 'Harmattan', sans-serif;
-
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 6px;
+    margin-left: 100px;
+  }
+  .btn {
+    font-size: 8px;
+  }
+  .card {
+    transition: 300ms ease-in-out;
+    background-color: #aeb7ac;
+  }
+  .card:hover {
+    transform: rotate(-4deg);
+  }
+  .card:hover ~ .card {
+    z-index: 1;
+    translate: 60px;
+  }
+  .card h5 {
+    position: relative;
+  }
+  .card + .card {
+    margin-left: -10%;
+  }
+  .tablaposiciones {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 800px;
+    top: 50px;
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 75%;
+    height: 300px;
+  }
+  .nombre {
+    text-align: center;
+  }
+  .formulario {
+    text-align: center;
+    font-family: "Fahkwang", sans-serif;
+    font-size: medium;
+    color: white;
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+  }
+  .map-responsive {
+    width: 400px;
+    height: 200px;
+    right: -30%;
+    top: 25px;
+  }
+  .pie-pagina {
+    width: 100%;
+    background: linear-gradient(to bottom, #061700, #357822, #17de17);
+    height: -5px;
+  }
+  .pie-pagina .grupo-1 {
+    width: 5%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    margin-top: 40px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 0px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 0px;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+  }
+  .pie-pagina .grupo-2 {
+    background-color: #061700;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 10px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  .facebook {
+    display: inline-block;
+    width: 60px;
+  }
+  .instagram {
+    width: 60px;
+  }
+  .twitter {
+    width: 60px;
+  }
+  .youtube {
+    margin-top: 5px;
+    width: 60px;
+    display: inline;
+  }
 }
-
-
-/* -------- VISTA MOBILE -------- */
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
 @media only screen and (min-width: 375px) and (max-width: 812px) {
-
-    /* --------- NAVBAR PARA VISTA MOBILE --------- */
-    .logo {
-
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        border-radius: 50%;
-        position: relative;
-
-    }
-
-    .fondoheader {
-        background-color: transparent;
-    }
-
-    li a {
-        text-transform: uppercase;
-        font-family: 'Harmattan', sans-serif;
-
-    }
-
-    .container-fluid {
-        font-size: 12px;
-    }
-
-    .colordropdown {
-        background-color: #0b8600;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
-
-    /* ------- CARD IMAGES PARA VISTA MOBILE -------- */
-    .left-image {
-        width: 30px;
-
-    }
-
-    .right-image {
-        width: 30px;
-    }
-
-    .tarjetasinfo {
-        width: 20rem;
-        height: 10rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        font-size: 6px;
-        margin-left: 25px;
-    }
-
-    .btn {
-        font-size: 8px;
-
-    }
-
-    .card {
-        transition: 300ms ease-in-out;
-        background-color: #aeb7ac;
-    }
-
-    .card+.card {
-        margin-left: -10%;
-    }
-
-    .card:hover {
-        transform: rotate(-4deg);
-    }
-
-    .card:hover~.card {
-        z-index: 1;
-        translate: 60px;
-    }
-
-    .card h5 {
-        position: relative;
-    }
-
-    .tablaposiciones {
-        padding: 0;
-        margin: 0;
-        width: auto;
-        height: 800px;
-        top: 50px;
-    }
-
-
-    /* -------- PAGINA INFORMACION ---------*/
-
-    .tablaposiciones {
-        
-        margin-top: 20px;
-        margin-left: 90px;
-        width: 50%;
-        height: 150px;
-    }
-
-    /* ---------- PAGINA CONTACTO ---------- */
-
-    .nombre {
-        text-align: center;
-    }
-
-    .formulario {
-        text-align: center;
-        font-family: 'Fahkwang', sans-serif;
-        font-size: medium;
-        color: white;
-        position: relative;
-        top: 50px;
-        margin-bottom: 40px;
-
-    }
-
-    /* MAPA */
-    .map-responsive {
-        width: 250px;
-        height: 200px;
-        position: relative;
-        margin-left: -50px;
-        top: 25px;
-    }
-
-
-    /* ---------- PIE DE PAGINA -----------*/
-
-    .pie-pagina .grupo-1 {
-        width: 5%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    .pie-pagina {
-        width: 100%;
-        background: linear-gradient(to bottom, #061700, #357822, #17de17);
-    }
-
-    .pie-pagina .grupo-1 {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 45px 0px;
-    }
-
-    .pie-pagina .grupo-1 {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* LOGO DEFENSORES PIE DE PAGINA */
-    .pie-pagina .grupo-1 .box figure img {
-        margin-top: 40px;
-        width: 35px;
-        border-radius: 50%;
-
-    }
-
-    .pie-pagina .grupo-1 .box h2 {
-        color: #fff;
-        margin-bottom: 25px;
-        font-size: 0px;
-    }
-
-    .pie-pagina .grupo-1 .box p {
-        color: #efefef;
-        margin-bottom: 10px;
-        font-size: 0px;
-    }
-
-    .facebook {
-        display: inline;
-        width: 35px;
-    }
-
-    .instagram {
-        width: 35px;
-    }
-
-    .twitter {
-        width: 35px;
-    }
-
-    .youtube {
-        width: 35px;
-        display: inline;
-
-    }
-
-    .pie-pagina .grupo-1 .red-social a:hover {
-        color: aqua;
-    }
-
-    .pie-pagina .grupo-2 {
-        background-color: #061700;
-        padding: 15px 10px;
-        text-align: center;
-        color: #fff;
-    }
-
-    .pie-pagina .grupo-2 small {
-        font-size: 10px;
-    }
-
-    .pie-pagina {
-        height: -5px;
-    }
+  .logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+  }
+  .fondoheader {
+    background-color: transparent;
+  }
+  li a {
+    text-transform: uppercase;
+    font-family: "Harmattan", sans-serif;
+  }
+  .container-fluid {
+    font-size: 12px;
+  }
+  .colordropdown {
+    background-color: #0b8600;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .left-image {
+    width: 30px;
+  }
+  .right-image {
+    width: 30px;
+  }
+  .tarjetasinfo {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 6px;
+    margin-left: 25px;
+  }
+  .btn {
+    font-size: 8px;
+  }
+  .card {
+    transition: 300ms ease-in-out;
+    background-color: #aeb7ac;
+  }
+  .card:hover {
+    transform: rotate(-4deg);
+  }
+  .card:hover ~ .card {
+    z-index: 1;
+    translate: 60px;
+  }
+  .card h5 {
+    position: relative;
+  }
+  .card + .card {
+    margin-left: -10%;
+  }
+  .tablaposiciones {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 800px;
+    top: 50px;
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 50%;
+    height: 150px;
+  }
+  .nombre {
+    text-align: center;
+  }
+  .formulario {
+    text-align: center;
+    font-family: "Fahkwang", sans-serif;
+    font-size: medium;
+    color: white;
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+  }
+  .map-responsive {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    margin-left: -50px;
+    top: 25px;
+  }
+  .pie-pagina {
+    width: 100%;
+    background: linear-gradient(to bottom, #061700, #357822, #17de17);
+    height: -5px;
+  }
+  .pie-pagina .grupo-1 {
+    width: 5%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    margin-top: 40px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 0px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 0px;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+  }
+  .pie-pagina .grupo-2 {
+    background-color: #061700;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 10px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  .facebook {
+    display: inline;
+    width: 35px;
+  }
+  .instagram {
+    width: 35px;
+  }
+  .twitter {
+    width: 35px;
+  }
+  .youtube {
+    width: 35px;
+    display: inline;
+  }
 }
 
-/* ------- VISTA TABLET -------- */
-@media only screen and (min-width: 768px) and (max-width: 1040px) {
-    .logo {
-
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        border-radius: 50%;
-        position: relative;
-
-    }
-
-    .fondoheader {
-        background-color: transparent;
-    }
-
-    li a {
-        text-transform: uppercase;
-        font-family: 'Harmattan', sans-serif;
-
-    }
-
-    .container-fluid {
-        font-size: 20px;
-    }
-
-    .colordropdown {
-        background-color: #0b8600;
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
-
-    /* ------- CARD IMAGES PARA VISTA TABLET-------- */
-    .left-image {
-        width: 30px;
-
-    }
-
-    .right-image {
-        width: 30px;
-    }
-
-    .tarjetasinfo {
-        width: 35rem;
-        height: 10rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        font-size: 6px;
-        margin-left: 100px;
-    }
-
-    .btn {
-        font-size: 8px;
-    }
-
-    .card {
-        transition: 300ms ease-in-out;
-        background-color: #aeb7ac;
-    }
-
-    .card+.card {
-        margin-left: -10%;
-    }
-
-    .card:hover {
-        transform: rotate(-4deg);
-    }
-
-    .card:hover~.card {
-        z-index: 1;
-        translate: 60px;
-    }
-
-    .card h5 {
-        position: relative;
-    }
-
-    .tablaposiciones {
-        padding: 0;
-        margin: 0;
-        width: auto;
-        height: 800px;
-        top: 50px;
-    }
-
-
-    /* -------- PAGINA INFORMACION ---------*/
-
-    .tablaposiciones {
-        margin-top: 20px;
-        margin-left: 90px;
-        width: 75%;
-        height: 300px;
-    }
-
-    /* ---------- PAGINA CONTACTO ---------- */
-
-    .nombre {
-        text-align: center;
-    }
-
-    .formulario {
-        text-align: center;
-        font-family: 'Fahkwang', sans-serif;
-        font-size: medium;
-        color: white;
-        position: relative;
-        top: 50px;
-        margin-bottom: 40px;
-
-    }
-
-    /* MAPA */
-    .map-responsive {
-        width: 400px;
-        height: 200px;
-        right: -30%;
-        top: 25px;
-    }
-
-
-    /* ---------- PIE DE PAGINA -----------*/
-
-    .pie-pagina .grupo-1 {
-        width: 5%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    .pie-pagina {
-        width: 100%;
-        background: linear-gradient(to bottom, #061700, #357822, #17de17);
-    }
-
-    .pie-pagina .grupo-1 {
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 45px 0px;
-    }
-
-    .pie-pagina .grupo-1 {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* LOGO DEFENSORES PIE DE PAGINA */
-    .pie-pagina .grupo-1 .box figure img {
-        margin-top: 40px;
-        width: 60px;
-        border-radius: 50%;
-    }
-
-    .pie-pagina .grupo-1 .box h2 {
-        color: #fff;
-        margin-bottom: 25px;
-        font-size: 0px;
-    }
-
-    .pie-pagina .grupo-1 .box p {
-        color: #efefef;
-        margin-bottom: 10px;
-        font-size: 0px;
-    }
-
-    .facebook {
-        display: inline-block;
-        width: 60px;
-    }
-
-    .instagram {
-        width: 60px;
-    }
-
-    .twitter {
-        width: 60px;
-    }
-
-    .youtube {
-        margin-top: 5px;
-        width: 60px;
-        display: inline;
-
-    }
-
-    .pie-pagina .grupo-1 .red-social a:hover {
-        color: aqua;
-    }
-
-    .pie-pagina .grupo-2 {
-        background-color: #061700;
-        padding: 15px 10px;
-        text-align: center;
-        color: #fff;
-    }
-
-    .pie-pagina .grupo-2 small {
-        font-size: 10px;
-    }
-
-    .pie-pagina {
-        height: -5px;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */

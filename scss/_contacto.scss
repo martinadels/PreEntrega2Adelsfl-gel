@@ -1,0 +1,21 @@
+/*CONTACTO*/
+
+.nombre {
+	text-align: center;
+}
+.formulario {
+	text-align: center;
+	font-family: $font-family_2;
+	font-size: medium;
+	color: $color_6;
+	position: relative;
+	top: 50px;
+	margin-bottom: 40px;
+}
+.map-responsive {
+	width: 500px;
+	height: 320px;
+	position: relative;
+	right: -30%;
+	top: 10px;
+}
