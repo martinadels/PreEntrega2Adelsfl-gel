@@ -88,66 +88,86 @@ header {
 }
 
 /*FOOTER*/
-.pie-pagina {
-  width: 100%;
-  background: linear-gradient(to bottom, #061700, #357822, #17de17);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
+
+.container {
+  max-width: 1170px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
+
+.row {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
-.pie-pagina .grupo-1 .box figure img {
-  width: 150px;
-  border-radius: 50%;
+
+ul {
+  list-style: none;
 }
-.pie-pagina .grupo-1 .box h2 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
+
+.footer {
+  background-color: #0b8600;
+  padding: 70px 0;
 }
-.pie-pagina .grupo-1 .box p {
-  color: #efefef;
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #061700;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
 }
-.pie-pagina .grupo-2 {
-  background-color: #061700;
-  padding: 15px 10px;
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
   text-align: center;
-  color: #fff;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-.pie-pagina .grupo-2 small {
-  font-size: 10px;
-}
-
-.facebook {
-  width: 50px;
-}
-
-.instagram {
-  width: 50px;
-}
-
-.twitter {
-  width: 50px;
-}
-
-.youtube {
-  width: 50px;
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #0b8600;
 }
 
 /*CONTACTO*/
@@ -174,306 +194,114 @@ header {
 }
 
 /*JUGADOR*/
-.contenedor {
-  background: radial-gradient(#1bb22f, #2a7908, #033102);
-  width: 400px;
-  padding: 30px;
+.form {
+  background-color: #061700;
   margin: auto;
-  margin-top: 100px;
-  border-radius: 50px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Fahkwang", sans-serif;
-  font-size: 10pxpx;
-  height: 100vh;
-  width: 320px;
-  height: 420px;
-  position: absolute;
-  transform: translate(0%, 0%);
-  box-sizing: border-box;
-  padding: 70px 30px;
-  top: 60%;
-  right: 40%;
-  border-radius: 10%;
-}
-.contenedor h2 {
-  font-size: 24px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  display: grid;
+  align-content: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
-.contenedor .defex {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  right: 35%;
+
+.form_title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: #ffffff;
 }
 
-.control {
-  width: 100%;
-  background-color: #aeb7ac;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  border: 1px solid #0b8600;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-}
-.control:focus {
-  height: 60px;
+.form_paragraph {
+  font-weight: 300;
+  color: #ffffff;
 }
 
-.boton {
+.form_link {
+  font-weight: 400;
+  color: rgb(44, 171, 27);
+}
+
+.form_container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+
+.font_group {
+  position: relative;
+  --color: #5757577e;
+}
+
+.form_input {
   width: 100%;
-  height: 45px;
-  margin-top: 15px;
-  border-radius: 4px;
-  border: none;
-  color: white;
-  font-size: 20px;
+  background: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
   border: none;
   outline: none;
-  height: 40px;
-  background: rgb(11, 50, 32);
-  color: white;
-  font-size: 15px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-bottom: 1px solid rgba(87, 87, 87, 0.4941176471);
+  font-family: "Harmattan", sans-serif;
 }
-.boton:hover {
-  cursor: pointer;
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+.form_input:focus + .form_label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #fff;
 }
-.boton:active {
-  transform: translateY(3px);
+.form_input:focus ~ .form_line {
+  transform: scale(1);
+}
+.form_input:not(:placeholder-shown) + .form_label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: rgb(44, 171, 27);
+}
+.form_input:not(:placeholder-shown) ~ .form_line {
+  transform: scale(1);
 }
 
-.login-box a {
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 20px;
-  color: grey;
-}
-.login-box a:hover {
+.form_input.form_input:not(:placeholder-shown) {
   color: white;
 }
 
-/* .login-box h2{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-} */
-/* .login-box label{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
+.form_label {
+  color: #efefef;
+  cursor: pointer;
+  position: absolute;
+  left: 600px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
 }
 
-.login-box input{
-    width: 100%;
-    margin-bottom: 20px;
-
-} */
-/* .type1{
-    border: none;
-    border-bottom: 1px solid #ffff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: rgb(255, 255, 255);
-    font-size:16px ;
-
-} */
-/* .type2{
-    border: none;
-    border-bottom: 1px solid #ffff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #ffff;
-    font-size: 16px;
-} */
-@media only screen and (min-width: 768px) and (max-width: 1040px) {
-  .logo {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    border-radius: 50%;
-    position: relative;
-  }
-  .fondoheader {
-    background-color: transparent;
-  }
-  li a {
-    text-transform: uppercase;
-    font-family: "Harmattan", sans-serif;
-  }
-  .container-fluid {
-    font-size: 20px;
-  }
-  .colordropdown {
-    background-color: #0b8600;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  .left-image {
-    width: 30px;
-  }
-  .right-image {
-    width: 30px;
-  }
-  .tarjetasinfo {
-    width: 35rem;
-    height: 10rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 6px;
-    margin-left: 100px;
-  }
-  .btn {
-    font-size: 8px;
-  }
-  .card {
-    transition: 300ms ease-in-out;
-    background-color: #aeb7ac;
-  }
-  .card:hover {
-    transform: rotate(-4deg);
-  }
-  .card:hover ~ .card {
-    z-index: 1;
-    translate: 60px;
-  }
-  .card h5 {
-    position: relative;
-  }
-  .card + .card {
-    margin-left: -10%;
-  }
-  .tablaposiciones {
-    padding: 0;
-    margin: 0;
-    width: auto;
-    height: 800px;
-    top: 50px;
-    margin-top: 20px;
-    margin-left: 90px;
-    width: 75%;
-    height: 300px;
-  }
-  .nombre {
-    text-align: center;
-  }
-  .formulario {
-    text-align: center;
-    font-family: "Fahkwang", sans-serif;
-    font-size: medium;
-    color: white;
-    position: relative;
-    top: 50px;
-    margin-bottom: 40px;
-  }
-  .map-responsive {
-    width: 400px;
-    height: 200px;
-    right: -30%;
-    top: 25px;
-  }
-  .pie-pagina {
-    width: 100%;
-    background: linear-gradient(to bottom, #061700, #357822, #17de17);
-    height: -5px;
-  }
-  .pie-pagina .grupo-1 {
-    width: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .pie-pagina .grupo-1 .box figure img {
-    margin-top: 40px;
-    width: 60px;
-    border-radius: 50%;
-  }
-  .pie-pagina .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 0px;
-  }
-  .pie-pagina .grupo-1 .box p {
-    color: #efefef;
-    margin-bottom: 10px;
-    font-size: 0px;
-  }
-  .pie-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
-  }
-  .pie-pagina .grupo-2 {
-    background-color: #061700;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-  }
-  .pie-pagina .grupo-2 small {
-    font-size: 10px;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-  }
-  .facebook {
-    display: inline-block;
-    width: 60px;
-  }
-  .instagram {
-    width: 60px;
-  }
-  .twitter {
-    width: 60px;
-  }
-  .youtube {
-    margin-top: 5px;
-    width: 60px;
-    display: inline;
-  }
+.form_submit {
+  background: rgb(44, 171, 27);
+  color: #ffffff;
+  font-family: "Harmattan", sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
 }
-@media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
+
+.form.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0b8600;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
 }
+
+/* -------- VISTA MOBILE -------- */
 @media only screen and (min-width: 375px) and (max-width: 812px) {
+  /* --------- NAVBAR PARA VISTA MOBILE --------- */
   .logo {
     width: 60px;
     height: 60px;
@@ -498,6 +326,8 @@ header {
     display: flex;
     justify-content: center;
   }
+  /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+  /* ------- CARD IMAGES PARA VISTA MOBILE -------- */
   .left-image {
     width: 30px;
   }
@@ -523,6 +353,9 @@ header {
     transition: 300ms ease-in-out;
     background-color: #aeb7ac;
   }
+  .card + .card {
+    margin-left: -10%;
+  }
   .card:hover {
     transform: rotate(-4deg);
   }
@@ -533,20 +366,21 @@ header {
   .card h5 {
     position: relative;
   }
-  .card + .card {
-    margin-left: -10%;
-  }
   .tablaposiciones {
     padding: 0;
     margin: 0;
     width: auto;
     height: 800px;
     top: 50px;
+  }
+  /* -------- PAGINA INFORMACION ---------*/
+  .tablaposiciones {
     margin-top: 20px;
     margin-left: 90px;
     width: 50%;
     height: 150px;
   }
+  /* ---------- PAGINA CONTACTO ---------- */
   .nombre {
     text-align: center;
   }
@@ -559,6 +393,7 @@ header {
     top: 50px;
     margin-bottom: 40px;
   }
+  /* MAPA */
   .map-responsive {
     width: 250px;
     height: 200px;
@@ -566,76 +401,169 @@ header {
     margin-left: -50px;
     top: 25px;
   }
-  .pie-pagina {
+  /* ---------- PIE DE PAGINA -----------*/
+  .footer-col {
     width: 100%;
-    background: linear-gradient(to bottom, #061700, #357822, #17de17);
-    height: -5px;
   }
-  .pie-pagina .grupo-1 {
-    width: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-    width: 50%;
-    height: 50%;
+}
+/* ------- VISTA TABLET -------- */
+@media only screen and (min-width: 768px) and (max-width: 1040px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+  }
+  .fondoheader {
+    background-color: transparent;
+  }
+  li a {
+    text-transform: uppercase;
+    font-family: "Harmattan", sans-serif;
+  }
+  .container-fluid {
+    font-size: 20px;
+  }
+  .colordropdown {
+    background-color: #0b8600;
+  }
+  header {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  .pie-pagina .grupo-1 .box figure img {
-    margin-top: 40px;
-    width: 35px;
-    border-radius: 50%;
+  /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+  /* ------- CARD IMAGES PARA VISTA TABLET-------- */
+  .left-image {
+    width: 30px;
   }
-  .pie-pagina .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 0px;
+  .right-image {
+    width: 30px;
   }
-  .pie-pagina .grupo-1 .box p {
-    color: #efefef;
-    margin-bottom: 10px;
-    font-size: 0px;
+  .tarjetasinfo {
+    width: 35rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 6px;
+    margin-left: 100px;
   }
-  .pie-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
+  .btn {
+    font-size: 8px;
   }
-  .pie-pagina .grupo-2 {
-    background-color: #061700;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+  .card {
+    transition: 300ms ease-in-out;
+    background-color: #aeb7ac;
   }
-  .pie-pagina .grupo-2 small {
-    font-size: 10px;
+  .card + .card {
+    margin-left: -10%;
   }
-  * {
-    margin: 0;
+  .card:hover {
+    transform: rotate(-4deg);
+  }
+  .card:hover ~ .card {
+    z-index: 1;
+    translate: 60px;
+  }
+  .card h5 {
+    position: relative;
+  }
+  .tablaposiciones {
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    width: auto;
+    height: 800px;
+    top: 50px;
   }
-  .facebook {
-    display: inline;
-    width: 35px;
+  /* -------- PAGINA INFORMACION ---------*/
+  .tablaposiciones {
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 75%;
+    height: 300px;
   }
-  .instagram {
-    width: 35px;
+  /* ---------- PAGINA CONTACTO ---------- */
+  .nombre {
+    text-align: center;
   }
-  .twitter {
-    width: 35px;
+  .formulario {
+    text-align: center;
+    font-family: "Fahkwang", sans-serif;
+    font-size: medium;
+    color: white;
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
   }
-  .youtube {
-    width: 35px;
-    display: inline;
+  /* MAPA */
+  .map-responsive {
+    width: 400px;
+    height: 200px;
+    right: -30%;
+    top: 25px;
   }
+  /* ---------- PIE DE PAGINA -----------*/
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  background-color: var(--color-grey);
+  color: var(--color-light);
+  letter-spacing: 0.05rem;
+}
+
+.bg-light {
+  background-color: var(--color-light) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark) !important;
+}
+
+.p-6 {
+  padding: 4rem 7rem;
+}
+
+.contact-box {
+  padding: 3rem;
+}
+
+.btn {
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  min-width: 10rem;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--color-dark-xx);
+}
+
+.form-control {
+  background-color: var(--color-dark-xx);
+  border: 2px solid var(--color-dark-xx);
+  border-radius: 0.2rem;
+  padding: 1.5rem 1rem;
+}
+
+.register-bg {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.testiomonial {
+  bottom: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

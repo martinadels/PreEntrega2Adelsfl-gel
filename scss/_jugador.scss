@@ -1,139 +1,126 @@
 /*JUGADOR*/
 
-.contenedor {
-    background: radial-gradient(#1bb22f, #2a7908, #033102);
-    width: 400px;
-    padding: 30px;
+
+.form {
+    background-color: $background-color_4;
     margin: auto;
-    margin-top: 100px;
-    border-radius: 50px;
-    font-family: $font-family_4;
-    color: $color_6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-family_2;
-    font-size: 10pxpx;
-    height: 100vh;
-    width: 320px;
-    height: 420px;
-    position: absolute;
-    transform: translate(0%, 0%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    top: 60%;
-    right: 40%;
-    border-radius: 10%;
+    display: grid;
+    align-content: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
 
-    h2 {
-        font-size: 24px;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .defex {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        position: absolute;
-        top: -50px;
-        right: 35%;
-    }
 }
 
-.control {
-    width: 100%;
-    background-color: $background-color_3;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    border: 1px solid #0b8600;
-    font-family: $font-family_4;
-    font-size: 18px;
-
-    &:focus {
-        height: 60px;
-    }
+.form_title {
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: $color_9;
 }
 
-.boton {
+.form_paragraph {
+    font-weight: 300;
+    color: $color_9;
+}
+
+.form_link {
+    font-weight: 400;
+    color: $color_1;
+}
+
+.form_container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.font_group {
+    position: relative;
+    --color: #5757577e;
+}
+
+.form_input {
     width: 100%;
-    height: 45px;
-    margin-top: 15px;
-    border-radius: 4px;
-    border: none;
-    color: $color_6;
-    font-size: 20px;
+    background: none;
+    color: $color_2;
+    font-size: 1rem;
+    padding: .6em .3em;
     border: none;
     outline: none;
-    height: 40px;
-    background: rgb(11, 50, 32);
-    color: $color_7;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    border-bottom: 1px solid #5757577e;
+    font-family: $font-family_1;
 
-    &:hover {
-        cursor: pointer;
-        transform: translateY(-3px);
-        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    &:focus {
+        + {
+            .form_label {
+                transform: translateY(-12px) scale(.7);
+                transform-origin: left top;
+                color: $color_3;
+            }
+        }
+
+        ~ {
+            .form_line {
+                transform: scale(1);
+            }
+        }
     }
 
-    &:active {
-        transform: translateY(3px);
-    }
-}
+    &:not(:placeholder-shown) {
+        + {
+            .form_label {
+                transform: translateY(-12px) scale(.7);
+                transform-origin: left top;
+                color: $color_1;
+            }
+        }
 
-.login-box {
-    a {
-        text-decoration: none;
-        font-size: 12px;
-        line-height: 20px;
-        color: $color_8;
-
-        &:hover {
-            color: $color_6;
+        ~ {
+            .form_line {
+                transform: scale(1);
+            }
         }
     }
 }
 
-
-
-/* .login-box h2{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-} */
-/* .login-box label{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
+.form_input.form_input {
+    &:not(:placeholder-shown) {
+        color: $color_6;
+    }
 }
 
-.login-box input{
+.form_label {
+    color: $color_4;
+    cursor: pointer;
+    position: absolute;
+    left: 600px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_submit {
+    background: $color_1;
+    color: $color_9;
+    font-family: $font-family_1;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    margin-bottom: 20px;
-
-} */
-/* .type1{
-    border: none;
-    border-bottom: 1px solid #ffff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: rgb(255, 255, 255);
-    font-size:16px ;
-
-} */
-/* .type2{
-    border: none;
-    border-bottom: 1px solid #ffff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #ffff;
-    font-size: 16px;
-} */
+    height: 1px;
+    background-color: $background-color_2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}

@@ -1,0 +1,280 @@
+/* -------- VISTA MOBILE -------- */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+
+    /* --------- NAVBAR PARA VISTA MOBILE --------- */
+    .logo {
+
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+
+    }
+
+    .fondoheader {
+        background-color: transparent;
+    }
+
+    li a {
+        text-transform: uppercase;
+        font-family: 'Harmattan', sans-serif;
+
+    }
+
+    .container-fluid {
+        font-size: 12px;
+    }
+
+    .colordropdown {
+        background-color: #0b8600;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+
+    /* ------- CARD IMAGES PARA VISTA MOBILE -------- */
+    .left-image {
+        width: 30px;
+
+    }
+
+    .right-image {
+        width: 30px;
+    }
+
+    .tarjetasinfo {
+        width: 20rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 6px;
+        margin-left: 25px;
+    }
+
+    .btn {
+        font-size: 8px;
+
+    }
+
+    .card {
+        transition: 300ms ease-in-out;
+        background-color: #aeb7ac;
+    }
+
+    .card+.card {
+        margin-left: -10%;
+    }
+
+    .card:hover {
+        transform: rotate(-4deg);
+    }
+
+    .card:hover~.card {
+        z-index: 1;
+        translate: 60px;
+    }
+
+    .card h5 {
+        position: relative;
+    }
+
+    .tablaposiciones {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: 800px;
+        top: 50px;
+    }
+
+
+    /* -------- PAGINA INFORMACION ---------*/
+
+    .tablaposiciones {
+
+        margin-top: 20px;
+        margin-left: 90px;
+        width: 50%;
+        height: 150px;
+    }
+
+    /* ---------- PAGINA CONTACTO ---------- */
+
+    .nombre {
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+        font-family: 'Fahkwang', sans-serif;
+        font-size: medium;
+        color: white;
+        position: relative;
+        top: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    /* MAPA */
+    .map-responsive {
+        width: 250px;
+        height: 200px;
+        position: relative;
+        margin-left: -50px;
+        top: 25px;
+    }
+
+
+    /* ---------- PIE DE PAGINA -----------*/
+    .footer-col{
+        width: 100%;
+    }
+    
+}
+
+/* ------- VISTA TABLET -------- */
+@media only screen and (min-width: 768px) and (max-width: 1040px) {
+    .logo {
+
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+
+    }
+
+    .fondoheader {
+        background-color: transparent;
+    }
+
+    li a {
+        text-transform: uppercase;
+        font-family: 'Harmattan', sans-serif;
+
+    }
+
+    .container-fluid {
+        font-size: 20px;
+    }
+
+    .colordropdown {
+        background-color: #0b8600;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
+
+    /* ------- CARD IMAGES PARA VISTA TABLET-------- */
+    .left-image {
+        width: 30px;
+
+    }
+
+    .right-image {
+        width: 30px;
+    }
+
+    .tarjetasinfo {
+        width: 35rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 6px;
+        margin-left: 100px;
+    }
+
+    .btn {
+        font-size: 8px;
+    }
+
+    .card {
+        transition: 300ms ease-in-out;
+        background-color: #aeb7ac;
+    }
+
+    .card+.card {
+        margin-left: -10%;
+    }
+
+    .card:hover {
+        transform: rotate(-4deg);
+    }
+
+    .card:hover~.card {
+        z-index: 1;
+        translate: 60px;
+    }
+
+    .card h5 {
+        position: relative;
+    }
+
+    .tablaposiciones {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: 800px;
+        top: 50px;
+    }
+
+
+    /* -------- PAGINA INFORMACION ---------*/
+
+    .tablaposiciones {
+        margin-top: 20px;
+        margin-left: 90px;
+        width: 75%;
+        height: 300px;
+    }
+
+    /* ---------- PAGINA CONTACTO ---------- */
+
+    .nombre {
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+        font-family: 'Fahkwang', sans-serif;
+        font-size: medium;
+        color: white;
+        position: relative;
+        top: 50px;
+        margin-bottom: 40px;
+
+    }
+
+    /* MAPA */
+    .map-responsive {
+        width: 400px;
+        height: 200px;
+        right: -30%;
+        top: 25px;
+    }
+
+
+    /* ---------- PIE DE PAGINA -----------*/
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
