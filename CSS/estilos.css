@@ -348,6 +348,7 @@ ul {
   }
   .btn {
     font-size: 8px;
+    display: none;
   }
   .card {
     transition: 300ms ease-in-out;
@@ -373,12 +374,11 @@ ul {
     height: 800px;
     top: 50px;
   }
+  /*PAGINA JUGADOR*/
   /* -------- PAGINA INFORMACION ---------*/
-  .tablaposiciones {
-    margin-top: 20px;
-    margin-left: 90px;
-    width: 50%;
-    height: 150px;
+  .tabla_info {
+    width: 100%;
+    height: 50%;
   }
   /* ---------- PAGINA CONTACTO ---------- */
   .nombre {
@@ -403,7 +403,7 @@ ul {
   }
   /* ---------- PIE DE PAGINA -----------*/
   .footer-col {
-    width: 100%;
+    width: 50%;
   }
 }
 /* ------- VISTA TABLET -------- */
@@ -565,5 +565,103 @@ body {
 .testiomonial {
   bottom: 10px;
 }
+
+.tabla_info {
+  background: rgba(255, 255, 255, 0.2);
+}
+.tabla_info .puntos {
+  color: white;
+}
+
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .box {
+    position: relative;
+    width: 10rem;
+    height: 20rem;
+    margin: 3rem;
+
+    &:hover {
+      .imgBox {
+        transform: translate(-1.5rem, -1.5rem);
+      }
+
+      .content {
+        transform: translate(3.5rem, 3.5rem);
+      }
+    }
+  }
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+
+  .img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: $background-color_9;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+
+  .h2 {
+    display: block;
+    font-size: 2rem;
+    color: $color_12;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .span {
+    color: $color_13;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+}
+  @media (max-width: 600px) {
+    .container .box:hover .content {
+      transform: translate(0, 3.5rem);
+    }
+
+    .container .box:hover .imgBox {
+      transform: translate(0, -3.5rem);
+    }
+  }
+
+  */ /*TRATO DE HACER ESTE CARD PARA CADA JUGADOR, PERO HAY ALGO QUE NO ME FUNCIONA*/
 
 /*# sourceMappingURL=estilos.css.map */
