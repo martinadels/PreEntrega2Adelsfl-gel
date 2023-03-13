@@ -19,7 +19,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
@@ -98,29 +99,33 @@
 
 
     <form class="formulario">
-        <label class="nombre" for="nombre">Nombre</label>
-        <input class="ingresarnombre" type="text" placeholder="Ingrese su nombre" id="nombre">
-        <br><br>
-        <label class="apellido" for="Apellido">Apellido</label>
-        <input class="ingresarapellido" type="text" placeholder="Ingrese su apellido" id="Apellido">
-        <br><br>
+        <div class="textoing">
+            <label class="nombre" for="nombre">Nombre</label>
+            <input class="ingresarnombre" type="text" placeholder="Ingrese su nombre" id="nombre">
+
+            <br><br>
+
+            <label class="apellido" for="Apellido">Apellido</label>
+            <input class="ingresarapellido" type="text" placeholder="Ingrese su apellido" id="Apellido">
+        </div>
 
         <br><br>
 
-
         <br><br>
 
 
-        <div class="check">Desea recibir noticias del equipo?</div> <input type="checkbox" name="acepta" value="1" />
+        <br><br>
+
 
 
         <br><br>
         <textarea class="comentario" name="" id="" cols="150" rows="10" placeholder="Comentarios"></textarea>
 
         <br><br>
-        <div>
-            <input class="enviar" type="submit">
-            <input class="restablecer" type="reset">
+        
+        <div class="botonescont">
+            <input  type="submit">
+            <input  type="reset">
         </div>
     </form>
     <iframe class="map-responsive"
@@ -170,9 +175,9 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -18,7 +18,7 @@
 
     li a {
         text-transform: uppercase;
-        font-family: 'Harmattan', sans-serif;
+        font-family: $font-family_1;
 
     }
 
@@ -62,8 +62,8 @@
 
     .btn {
         font-size: 8px;
-        display:none;
-        
+        display: none;
+
 
     }
 
@@ -114,39 +114,39 @@
         border-radius: 10px;
         box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
         text-align: center;
-    
+
     }
-    
+
     .form_title {
         font-size: 1rem;
         margin-top: .5em;
         margin-bottom: .5em;
         color: $color_9;
     }
-    
+
     .form_paragraph {
         font-size: .8rem;
         font-weight: 300px;
         color: $color_9;
     }
-    
+
     .form_link {
         font-size: .5rem;
         font-weight: 300px;
         color: $color_1;
     }
-    
+
     .form_container {
         margin-top: 1em;
         display: grid;
         gap: 1.5em;
     }
-    
+
     .form_group {
         position: relative;
         --color: #5757577e;
     }
-    
+
     .form_input {
         width: 80%;
         background: none;
@@ -157,7 +157,7 @@
         outline: none;
         border-bottom: 1px solid #5757577e;
         font-family: $font-family_1;
-    
+
         &:focus {
             + {
                 .form_label {
@@ -166,14 +166,14 @@
                     color: $color_3;
                 }
             }
-    
+
             ~ {
                 .form_line {
                     transform: scale(1);
                 }
             }
         }
-    
+
         &:not(:placeholder-shown) {
             + {
                 .form_label {
@@ -182,7 +182,7 @@
                     color: $color_1;
                 }
             }
-    
+
             ~ {
                 .form_line {
                     transform: scale(1);
@@ -190,13 +190,13 @@
             }
         }
     }
-    
+
     .form_input.form_input {
         &:not(:placeholder-shown) {
             color: $color_6;
         }
     }
-    
+
     .form_label {
         color: $color_4;
         cursor: pointer;
@@ -205,7 +205,7 @@
         transform: translateY(10px);
         transition: transform .5s, color .3s;
     }
-    
+
     .form_submit {
         background: $color_1;
         color: $color_9;
@@ -216,9 +216,9 @@
         padding: .8em 0;
         border: none;
         border-radius: .5em;
-        
+
     }
-    
+
     .form.line {
         position: absolute;
         bottom: 0;
@@ -237,7 +237,7 @@
 
     /* -------- PAGINA INFORMACION ---------*/
 
-    .tabla_info{
+    .tabla_info {
         width: 100%;
         height: 50%;
     }
@@ -250,7 +250,6 @@
     }
 
     .formulario {
-        background-color: $color_12;
         width: 80%;
         margin-left: 45px;
         margin-right: 5px;
@@ -263,22 +262,51 @@
         position: relative;
     }
 
+    .textoing {
+        font-family: $font-family_2;
+        font-size: 12px;
+        font-weight: 100;
+
+        #nombre {
+            background-color: $color_10 ;
+            border-color: $color_12;
+        }
+
+        #Apellido {
+            background-color: $color_10 ;
+            border-color: $color_12;
+        }
+    }
+
+    .comentario{
+        width: 100%;
+        margin-top: -150px;
+        height: 120px;
+        font-family: $font-family_2;
+    }
+    .botonescont{
+        font-family: $font-family_2;
+        font-weight: 500;
+        font-size: 12px;
+        margin-top: -20px;
+    }
+
     /* MAPA */
     .map-responsive {
         width: 250px;
         height: 200px;
         position: relative;
-        margin-left: -50px;
+        margin-left: -45px;
         top: 25px;
     }
 
 
     /* ---------- PIE DE PAGINA -----------*/
 
-    .footer-col{
+    .footer-col {
         width: 50%;
     }
-    
+
 }
 
 /* ------- VISTA TABLET -------- */
@@ -393,14 +421,48 @@
     }
 
     .formulario {
+        width: 80%;
+        margin-left: 45px;
+        margin-right: 5px;
+        margin-bottom: 40px;
+        margin-top: 4px;
         text-align: center;
         font-family: 'Fahkwang', sans-serif;
         font-size: medium;
         color: white;
         position: relative;
-        top: 50px;
-        margin-bottom: 40px;
+    }
 
+    .textoing {
+        font-family: $font-family_2;
+        font-size: 12px;
+        font-weight: 100;
+
+        #nombre {
+            background-color: $color_10 ;
+            border-color: $color_12;
+        }
+
+        #Apellido {
+            background-color: $color_10 ;
+            border-color: $color_12;
+        }
+    }
+
+    .comentario{
+        width: 70%;
+        margin-top: -150px;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        height: 200px;
+        font-family: $font-family_2;
+        font-style: italic;
+    }
+    .botonescont{
+        font-family: $font-family_2;
+        font-weight: 500;
+        font-size: 12px;
+        margin-left: 60px;
     }
 
     /* MAPA */
@@ -413,10 +475,9 @@
 
 
     /* ---------- PIE DE PAGINA -----------*/
-    .footer-col{
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
 
 }
-
