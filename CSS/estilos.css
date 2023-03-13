@@ -375,6 +375,107 @@ ul {
     top: 50px;
   }
   /*PAGINA JUGADOR*/
+  .form {
+    background-color: #061700;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: -200px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
+    height: 400px;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .form_title {
+    font-size: 1rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+  }
+  .form_paragraph {
+    font-size: 0.8rem;
+    font-weight: 300px;
+    color: #ffffff;
+  }
+  .form_link {
+    font-size: 0.5rem;
+    font-weight: 300px;
+    color: rgb(44, 171, 27);
+  }
+  .form_container {
+    margin-top: 1em;
+    display: grid;
+    gap: 1.5em;
+  }
+  .form_group {
+    position: relative;
+    --color: #5757577e;
+  }
+  .form_input {
+    width: 80%;
+    background: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.4941176471);
+    font-family: "Harmattan", sans-serif;
+  }
+  .form_input:focus + .form_label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+    color: #fff;
+  }
+  .form_input:focus ~ .form_line {
+    transform: scale(1);
+  }
+  .form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+    color: rgb(44, 171, 27);
+  }
+  .form_input:not(:placeholder-shown) ~ .form_line {
+    transform: scale(1);
+  }
+  .form_input.form_input:not(:placeholder-shown) {
+    color: white;
+  }
+  .form_label {
+    color: #efefef;
+    cursor: pointer;
+    position: absolute;
+    left: 600px;
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+  }
+  .form_submit {
+    background: rgb(44, 171, 27);
+    color: #ffffff;
+    font-family: "Harmattan", sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 0.5em;
+  }
+  .form.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #0b8600;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform 0.4s;
+  }
   /* -------- PAGINA INFORMACION ---------*/
   .tabla_info {
     width: 100%;
@@ -385,13 +486,17 @@ ul {
     text-align: center;
   }
   .formulario {
+    background-color: #111;
+    width: 80%;
+    margin-left: 45px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+    margin-top: 4px;
     text-align: center;
     font-family: "Fahkwang", sans-serif;
     font-size: medium;
     color: white;
     position: relative;
-    top: 50px;
-    margin-bottom: 40px;
   }
   /* MAPA */
   .map-responsive {
