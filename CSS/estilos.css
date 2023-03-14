@@ -530,9 +530,28 @@ ul {
     margin-left: -45px;
     top: 25px;
   }
+  /*PAGINA PLANTILLA*/
   /* ---------- PIE DE PAGINA -----------*/
   .footer-col {
     width: 50%;
+  }
+  /*PAGINA MEDIA*/
+  .gallery {
+    justify-content: center;
+    margin-top: -100px;
+  }
+  .gallery .imagengal {
+    width: 30%;
+    height: 30%;
+  }
+  .gallery .imagengal:hover {
+    width: 32%;
+    height: 32%;
+  }
+  .linkmedia {
+    font-size: 10px;
+    color: #efefef;
+    margin: 5px;
   }
 }
 /* ------- VISTA TABLET -------- */
@@ -666,12 +685,31 @@ ul {
     right: -30%;
     top: 25px;
   }
-  /* ---------- PIE DE PAGINA -----------*/
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
+  /*PAGINA MEDIA*/
+  .gallery {
+    justify-content: center;
+    margin-top: -100px;
+  }
+  .gallery .imagengal {
+    width: 30%;
+    height: 30%;
+  }
+  .gallery .imagengal:hover {
+    width: 32%;
+    height: 32%;
+  }
+  .linkmedia {
+    font-size: 15px;
+    color: #efefef;
+    margin: 10px;
   }
 }
+/* ---------- PIE DE PAGINA -----------*/
+.footer-col {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
@@ -733,95 +771,85 @@ body {
   color: white;
 }
 
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  position: relative;
+.grid-container {
+  background-color: linear-gradient(to bottom, #5a784c, #31711a, #0a3000, #000f00);
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-
-  .box {
-    position: relative;
-    width: 10rem;
-    height: 20rem;
-    margin: 3rem;
-
-    &:hover {
-      .imgBox {
-        transform: translate(-1.5rem, -1.5rem);
-      }
-
-      .content {
-        transform: translate(3.5rem, 3.5rem);
-      }
-    }
-  }
+  margin: 0;
 }
 
-.imgBox {
+.grid-item {
+  position: relative;
+  width: 20%;
+  margin: 10px;
+  overflow: hidden;
+}
+.grid-item:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.grid-item img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-
-  .img {
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-    resize: both;
-  }
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
-
-.content {
+.grid-item .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-color: $background-color_9;
-  z-index: 1;
-  align-items: flex-end;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-
-  .h2 {
-    display: block;
-    font-size: 2rem;
-    color: $color_12;
-    font-weight: 500;
-    line-height: 2rem;
-    letter-spacing: 1px;
-  }
-
-  .span {
-    color: $color_13;
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-  }
 }
-  @media (max-width: 600px) {
-    .container .box:hover .content {
-      transform: translate(0, 3.5rem);
-    }
+.grid-item .overlay .text {
+  color: #111;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+.grid-item:hover .overlay .text {
+  opacity: 1;
+}
 
-    .container .box:hover .imgBox {
-      transform: translate(0, -3.5rem);
-    }
-  }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .imagengal {
+  width: 30%;
+  height: 30%;
+  transition: all 0.5s ease;
+  filter: grayscale(80%);
+  margin: 5px;
+}
 
-  */ /*TRATO DE HACER ESTE CARD PARA CADA JUGADOR, PERO HAY ALGO QUE NO ME FUNCIONA*/
+.imagengal:hover {
+  width: 32%;
+  height: 32%;
+  filter: grayscale(0%);
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=estilos.css.map */

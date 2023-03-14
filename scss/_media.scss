@@ -278,13 +278,14 @@
         }
     }
 
-    .comentario{
+    .comentario {
         width: 100%;
         margin-top: -150px;
         height: 120px;
         font-family: $font-family_2;
     }
-    .botonescont{
+
+    .botonescont {
         font-family: $font-family_2;
         font-weight: 500;
         font-size: 12px;
@@ -301,10 +302,38 @@
     }
 
 
+    /*PAGINA PLANTILLA*/
+
+
     /* ---------- PIE DE PAGINA -----------*/
 
     .footer-col {
         width: 50%;
+    }
+
+
+    /*PAGINA MEDIA*/
+
+    .gallery {
+        justify-content: center;
+        margin-top: -100px;
+
+
+        .imagengal {
+            width: 30%;
+            height: 30%;
+        }
+
+        .imagengal:hover {
+            width: 32%;
+            height: 32%;
+        }
+    }
+
+    .linkmedia{
+        font-size: 10px;
+        color: $color_4;
+        margin: 5px;
     }
 
 }
@@ -449,7 +478,7 @@
         }
     }
 
-    .comentario{
+    .comentario {
         width: 70%;
         margin-top: -150px;
         margin-bottom: 10px;
@@ -458,7 +487,8 @@
         font-family: $font-family_2;
         font-style: italic;
     }
-    .botonescont{
+
+    .botonescont {
         font-family: $font-family_2;
         font-weight: 500;
         font-size: 12px;
@@ -473,11 +503,34 @@
         top: 25px;
     }
 
+    /*PAGINA MEDIA*/
 
-    /* ---------- PIE DE PAGINA -----------*/
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
+    .gallery {
+        justify-content: center;
+        margin-top: -100px;
+
+        .imagengal {
+            width: 30%;
+            height: 30%;
+        }
+
+        .imagengal:hover {
+            width: 32%;
+            height: 32%;
+        }
+    }
+
+    .linkmedia{
+        font-size: 15px;
+        color: $color_4;
+        margin: 10px;
     }
 
 }
+
+/* ---------- PIE DE PAGINA -----------*/
+.footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
