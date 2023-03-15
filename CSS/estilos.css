@@ -69,6 +69,7 @@ header {
 }
 .card:hover {
   transform: rotate(-4deg);
+  cursor: pointer;
 }
 .card:hover ~ .card {
   z-index: 1;
@@ -170,6 +171,14 @@ ul {
   background-color: #0b8600;
 }
 
+.footer .derechos {
+  background-color: #061700;
+  padding: 10px 10px;
+  margin-bottom: -75px;
+  text-align: center;
+  color: #fff;
+}
+
 /*CONTACTO*/
 .nombre {
   text-align: center;
@@ -197,6 +206,8 @@ ul {
 .form {
   background-color: #061700;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: -200px;
   display: grid;
   align-content: center;
   width: 90%;
@@ -270,7 +281,7 @@ ul {
   color: #efefef;
   cursor: pointer;
   position: absolute;
-  left: 600px;
+  left: 1180px;
   transform: translateY(10px);
   transition: transform 0.5s, color 0.3s;
 }
@@ -436,7 +447,7 @@ ul {
     transform: scale(1);
   }
   .form_input:not(:placeholder-shown) + .form_label {
-    transform: translateY(-12px) scale(0.7);
+    transform: translateY(-5px) scale(0.7);
     transform-origin: left top;
     color: rgb(44, 171, 27);
   }
@@ -453,6 +464,7 @@ ul {
     left: 600px;
     transform: translateY(10px);
     transition: transform 0.5s, color 0.3s;
+    font-size: 12px;
   }
   .form_submit {
     background: rgb(44, 171, 27);
@@ -476,8 +488,29 @@ ul {
     transform: left bottom;
     transition: transform 0.4s;
   }
+  /*PAGINA QUIENES SOMOS*/
+  .quienes {
+    text-align: center;
+  }
+  .quienes .somos {
+    font-family: "Harmattan", sans-serif;
+    font-size: 10px;
+    color: rgb(44, 171, 27);
+  }
+  .quienes .subt {
+    font-family: "Harmattan", sans-serif;
+    font-size: 2rem;
+    color: white;
+  }
+  .quienes .parrafo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #bbbbbb;
+  }
   /* -------- PAGINA INFORMACION ---------*/
   .tabla_info {
+    margin: auto;
     width: 100%;
     height: 50%;
   }
@@ -535,6 +568,9 @@ ul {
   .footer-col {
     width: 50%;
   }
+  .derechos {
+    font-size: 10px;
+  }
   /*PAGINA MEDIA*/
   .gallery {
     justify-content: center;
@@ -554,6 +590,7 @@ ul {
     margin: 5px;
   }
 }
+/**********************************/
 /* ------- VISTA TABLET -------- */
 @media only screen and (min-width: 768px) and (max-width: 1040px) {
   .logo {
@@ -626,6 +663,25 @@ ul {
     width: auto;
     height: 800px;
     top: 50px;
+  }
+  .quienes {
+    text-align: center;
+  }
+  .quienes .somos {
+    font-family: "Harmattan", sans-serif;
+    font-size: 1px;
+    color: rgb(44, 171, 27);
+  }
+  .quienes .subt {
+    font-family: "Harmattan", sans-serif;
+    font-size: 2rem;
+    color: white;
+  }
+  .quienes .parrafo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #bbbbbb;
   }
   /* -------- PAGINA INFORMACION ---------*/
   .tablaposiciones {
@@ -704,68 +760,97 @@ ul {
     margin: 10px;
   }
 }
+/*PAGINA JUGADOR*/
+.form_label {
+  margin-left: -570px;
+}
+
 /* ---------- PIE DE PAGINA -----------*/
 .footer-col {
   width: 50%;
   margin-bottom: 30px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
-  background-color: var(--color-grey);
-  color: var(--color-light);
-  letter-spacing: 0.05rem;
+* {
+  box-sizing: border-box;
 }
 
-.bg-light {
-  background-color: var(--color-light) !important;
+.contenedoring {
+  display: flex;
+  align-items: center;
+  background-color: #061700;
+  padding: 20px;
 }
 
-.bg-dark {
-  background-color: var(--color-dark) !important;
+.registro {
+  color: white;
+  text-align: center;
 }
 
-.p-6 {
-  padding: 4rem 7rem;
+.forming {
+  background-color: white;
+  width: 30%;
+  padding: 50px;
+  margin-left: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.contact-box {
-  padding: 3rem;
+.labeling {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #3B5834;
 }
 
-.btn {
-  font-weight: 400;
-  padding: 1rem 2rem;
-  border-radius: 5rem;
-  min-width: 10rem;
+.inputing {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.btn-outline-dark {
-  border: 2px solid var(--color-dark-xx);
+.buttoning[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+  background-color: #1e8903;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
-.form-control {
-  background-color: var(--color-dark-xx);
-  border: 2px solid var(--color-dark-xx);
-  border-radius: 0.2rem;
-  padding: 1.5rem 1rem;
+button[type=submit]:hover {
+  background-color: #2e7417;
 }
 
-.register-bg {
-  background-image: url("images/hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+.fotoing {
+  width: 50%;
+  height: 40%;
+  border-radius: 10px;
 }
 
-.testiomonial {
-  bottom: 10px;
+.fotoing + .registro {
+  position: absolute;
+  margin-left: 30px;
+  text-transform: uppercase;
+  top: 85px;
+  z-index: 1;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .tabla_info {
   background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 100%;
 }
 .tabla_info .puntos {
   color: white;
@@ -850,6 +935,28 @@ body {
   height: 32%;
   filter: grayscale(0%);
   cursor: pointer;
+}
+
+.quienes {
+  text-align: center;
+  margin: 200px;
+  margin-top: 5px;
+}
+.quienes .somos {
+  font-family: "Harmattan", sans-serif;
+  font-size: 6rem;
+  color: rgb(44, 171, 27);
+}
+.quienes .subt {
+  font-family: "Harmattan", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.quienes .parrafo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  color: #bbbbbb;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=estilos.css.map */

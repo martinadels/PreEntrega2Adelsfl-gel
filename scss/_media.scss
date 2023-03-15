@@ -177,7 +177,7 @@
         &:not(:placeholder-shown) {
             + {
                 .form_label {
-                    transform: translateY(-12px) scale(.7);
+                    transform: translateY(-5px) scale(.7);
                     transform-origin: left top;
                     color: $color_1;
                 }
@@ -204,6 +204,7 @@
         left: 600px;
         transform: translateY(10px);
         transition: transform .5s, color .3s;
+        font-size: 12px;
     }
 
     .form_submit {
@@ -231,13 +232,37 @@
         transition: transform .4s;
     }
 
+    /*PAGINA QUIENES SOMOS*/
 
+    .quienes{
+        text-align: center;
+
+        .somos{
+            font-family: $font-family_1;
+            font-size: 10px;
+            color: $color_1;
+        }
+        .subt{
+            font-family: $font-family_1;
+            font-size: 2rem;
+            color: $color_7;
+        }
+    
+        .parrafo{
+            font-family: $font-family_3 ;
+            font-size: 16px;
+            font-weight:200;
+            color: $color_10;
+
+        }
+    }
 
 
 
     /* -------- PAGINA INFORMACION ---------*/
 
     .tabla_info {
+        margin: auto;
         width: 100%;
         height: 50%;
     }
@@ -310,6 +335,9 @@
     .footer-col {
         width: 50%;
     }
+    .derechos{
+        font-size: 10px;
+    }
 
 
     /*PAGINA MEDIA*/
@@ -338,7 +366,12 @@
 
 }
 
+
+
+
+/**********************************/
 /* ------- VISTA TABLET -------- */
+
 @media only screen and (min-width: 768px) and (max-width: 1040px) {
     .logo {
 
@@ -433,7 +466,28 @@
         top: 50px;
     }
 
+    .quienes{
+        text-align: center;
 
+        .somos{
+            font-family: $font-family_1;
+            font-size: 1px;
+            color: $color_1;
+        }
+        .subt{
+            font-family: $font-family_1;
+            font-size: 2rem;
+            color: $color_7;
+        }
+    
+        .parrafo{
+            font-family: $font-family_3 ;
+            font-size: 16px;
+            font-weight:200;
+            color: $color_10;
+
+        }
+    }
     /* -------- PAGINA INFORMACION ---------*/
 
     .tablaposiciones {
@@ -527,6 +581,11 @@
     }
 
 }
+/*PAGINA JUGADOR*/
+.form_label{
+    margin-left: -570px;
+}
+
 
 /* ---------- PIE DE PAGINA -----------*/
 .footer-col {

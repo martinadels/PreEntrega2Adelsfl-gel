@@ -4,6 +4,8 @@
 .form {
     background-color: $background-color_4;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: -200px;
     display: grid;
     align-content: center;
     width: 90%;
@@ -96,7 +98,7 @@
     color: $color_4;
     cursor: pointer;
     position: absolute;
-    left: 600px;
+    left: 1180px;
     transform: translateY(10px);
     transition: transform .5s, color .3s;
 }

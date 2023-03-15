@@ -1,0 +1,23 @@
+.quienes{
+    text-align:center;
+    margin: 200px;
+    margin-top: 5px;
+
+    .somos{
+        font-family: $font-family_1;
+        font-size: 6rem;
+        color: $color_1;
+    }
+    .subt{
+        font-family: $font-family_1;
+        font-size: 2rem;
+        color: $color_7;
+    }
+
+    .parrafo{
+        font-family: $font-family_3 ;
+        font-weight:200;
+        color: $color_10;
+        text-align: justify;
+    }
+}
