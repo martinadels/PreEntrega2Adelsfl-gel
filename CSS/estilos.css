@@ -198,8 +198,8 @@ ul {
   width: 500px;
   height: 320px;
   position: relative;
-  right: -30%;
-  top: 10px;
+  right: -34%;
+  top: 12px;
 }
 
 /*JUGADOR*/
@@ -488,6 +488,68 @@ ul {
     transform: left bottom;
     transition: transform 0.4s;
   }
+  /*PAGINA INGRESO*/
+  .contenedoring {
+    display: flex;
+    align-items: center;
+    background-color: #061700;
+  }
+  .contenedoring .registro {
+    color: white;
+    text-align: left;
+    margin-top: 0px;
+    font-size: 2px;
+  }
+  .contenedoring .forming {
+    background-color: white;
+    width: 100rem;
+    margin-left: 50;
+    margin-right: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .contenedoring .labeling {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #3B5834;
+  }
+  .contenedoring .inputing {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .contenedoring .buttoning[type=submit] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+    background-color: #1e8903;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .contenedoring button[type=submit]:hover {
+    background-color: #2e7417;
+  }
+  .contenedoring .fotoing {
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    margin-right: -15rem;
+  }
+  .contenedoring .fotoing .registro {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
   /*PAGINA QUIENES SOMOS*/
   .quienes {
     text-align: center;
@@ -564,6 +626,77 @@ ul {
     top: 25px;
   }
   /*PAGINA PLANTILLA*/
+  .plantel {
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: underline;
+    margin: 5px;
+    color: #C5E6A6;
+    font-size: smaller;
+  }
+  .grid-container {
+    background-color: linear-gradient(to bottom, #5a784c, #31711a, #0a3000, #000f00);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    cursor: pointer;
+  }
+  .grid-item {
+    position: relative;
+    width: 20%;
+    margin: 10px;
+    overflow: hidden;
+  }
+  .grid-item:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item .overlay .text {
+    color: whitesmoke;
+    font-size: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  .grid-item:hover .overlay .text {
+    opacity: 1;
+    font-size: 5px;
+    text-align: center;
+    color: whitesmoke;
+  }
   /* ---------- PIE DE PAGINA -----------*/
   .footer-col {
     width: 50%;
@@ -664,12 +797,88 @@ ul {
     height: 800px;
     top: 50px;
   }
-  .quienes {
+  /*PAGINA PLANTILLA*/
+  .plantel {
     text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: underline;
+    margin: 5px;
+    color: #C5E6A6;
+    font-size: 20px;
+  }
+  .grid-container {
+    background-color: linear-gradient(to bottom, #5a784c, #31711a, #0a3000, #000f00);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    cursor: pointer;
+  }
+  .grid-item {
+    position: relative;
+    width: 20%;
+    margin: 10px;
+    overflow: hidden;
+  }
+  .grid-item:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item .overlay .text {
+    color: whitesmoke;
+    font-size: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  .grid-item:hover .overlay .text {
+    opacity: 1;
+    font-size: 10px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  /* PAGINA QUIENES SOMOS */
+  .quienes {
+    position: relative;
+    text-align: center;
+    margin: 8rem;
+    margin-top: 5px;
   }
   .quienes .somos {
     font-family: "Harmattan", sans-serif;
-    font-size: 1px;
+    font-size: 1rem;
     color: rgb(44, 171, 27);
   }
   .quienes .subt {
@@ -679,9 +888,9 @@ ul {
   }
   .quienes .parrafo {
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
     font-weight: 200;
     color: #bbbbbb;
+    text-align: justify;
   }
   /* -------- PAGINA INFORMACION ---------*/
   .tablaposiciones {
@@ -765,6 +974,68 @@ ul {
   margin-left: -570px;
 }
 
+/*PAGINA INGRESO*/
+.contenedoring {
+  display: flex;
+  align-items: center;
+  background-color: #061700;
+}
+.contenedoring .registro {
+  color: white;
+  margin-top: 100px;
+  font-size: 35px;
+}
+.contenedoring .forming {
+  background-color: white;
+  width: 100rem;
+  margin-left: -50;
+  margin-right: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.contenedoring .labeling {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #3B5834;
+}
+.contenedoring .inputing {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.contenedoring .buttoning[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+  background-color: #1e8903;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.contenedoring button[type=submit]:hover {
+  background-color: #2e7417;
+}
+.contenedoring .fotoing {
+  width: 50%;
+  height: 40%;
+  border-radius: 10px;
+  margin-right: -15rem;
+}
+.contenedoring .fotoing .registro {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 /* ---------- PIE DE PAGINA -----------*/
 .footer-col {
   width: 50%;
@@ -785,6 +1056,7 @@ ul {
 .registro {
   color: white;
   text-align: center;
+  z-index: 1;
 }
 
 .forming {
@@ -839,11 +1111,9 @@ button[type=submit]:hover {
 }
 
 .fotoing + .registro {
-  position: absolute;
   margin-left: 30px;
   text-transform: uppercase;
   top: 85px;
-  z-index: 1;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -854,6 +1124,15 @@ button[type=submit]:hover {
 }
 .tabla_info .puntos {
   color: white;
+}
+
+.plantel {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-decoration: underline;
+  margin: 5px;
+  color: #C5E6A6;
 }
 
 .grid-container {
@@ -938,9 +1217,10 @@ button[type=submit]:hover {
 }
 
 .quienes {
+  position: relative;
   text-align: center;
-  margin: 200px;
-  margin-top: 5px;
+  margin: 12.5rem;
+  margin-top: 0.313px;
 }
 .quienes .somos {
   font-family: "Harmattan", sans-serif;
@@ -954,7 +1234,6 @@ button[type=submit]:hover {
 }
 .quienes .parrafo {
   font-family: "Open Sans", sans-serif;
-  font-weight: 200;
   color: #bbbbbb;
   text-align: justify;
 }
