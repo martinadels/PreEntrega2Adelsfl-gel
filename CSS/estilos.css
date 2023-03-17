@@ -179,139 +179,175 @@ ul {
   color: #fff;
 }
 
-/*CONTACTO*/
-.nombre {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.formulario {
-  text-align: center;
-  font-family: "Fahkwang", sans-serif;
-  font-size: medium;
-  color: white;
-  position: relative;
-  top: 50px;
-  margin-bottom: 40px;
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #333;
 }
 
-.map-responsive {
-  width: 500px;
-  height: 320px;
-  position: relative;
-  right: -34%;
-  top: 12px;
+main {
+  padding: 2rem;
 }
 
-/*JUGADOR*/
-.form {
-  background-color: #061700;
+.contact-form {
+  max-width: 600px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: -200px;
-  display: grid;
-  align-content: center;
-  width: 90%;
-  max-width: 400px;
-  padding: 4.5em 3em;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.contact-form .form-row {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.contact-form .form-row input,
+.contact-form .form-row textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+.contact-form .form-row input:focus,
+.contact-form .form-row textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.contact-form .form-row .contact-label {
+  color: #efefef;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.contact-form .form-row textarea {
+  resize: none;
+  height: 10rem;
+}
+.contact-form .button-row {
   text-align: center;
 }
-
-.form_title {
-  font-size: 2rem;
-  margin-bottom: 0.5em;
-  color: #ffffff;
-}
-
-.form_paragraph {
-  font-weight: 300;
-  color: #ffffff;
-}
-
-.form_link {
-  font-weight: 400;
-  color: rgb(44, 171, 27);
-}
-
-.form_container {
-  margin-top: 3em;
-  display: grid;
-  gap: 2.5em;
-}
-
-.font_group {
-  position: relative;
-  --color: #5757577e;
-}
-
-.form_input {
-  width: 100%;
-  background: none;
-  color: whitesmoke;
-  font-size: 1rem;
-  padding: 0.6em 0.3em;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid rgba(87, 87, 87, 0.4941176471);
-  font-family: "Harmattan", sans-serif;
-}
-.form_input:focus + .form_label {
-  transform: translateY(-12px) scale(0.7);
-  transform-origin: left top;
-  color: #fff;
-}
-.form_input:focus ~ .form_line {
-  transform: scale(1);
-}
-.form_input:not(:placeholder-shown) + .form_label {
-  transform: translateY(-12px) scale(0.7);
-  transform-origin: left top;
-  color: rgb(44, 171, 27);
-}
-.form_input:not(:placeholder-shown) ~ .form_line {
-  transform: scale(1);
-}
-
-.form_input.form_input:not(:placeholder-shown) {
+.contact-form .button-row button[type=submit] {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  background-color: #0099cc;
   color: white;
-}
-
-.form_label {
-  color: #efefef;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
   cursor: pointer;
-  position: absolute;
-  left: 1180px;
-  transform: translateY(10px);
-  transition: transform 0.5s, color 0.3s;
+}
+.contact-form .button-row button[type=submit]:hover {
+  background-color: #007399;
 }
 
-.form_submit {
-  background: rgb(44, 171, 27);
-  color: #ffffff;
-  font-family: "Harmattan", sans-serif;
-  text-transform: capitalize;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 0.8em 0;
-  border: none;
-  border-radius: 0.5em;
+.map-container {
+  height: 400px;
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
-.form.line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.map-container iframe {
   width: 100%;
-  height: 1px;
-  background-color: #0b8600;
-  transform: scale(0);
-  transform: left bottom;
-  transition: transform 0.4s;
+  height: 100%;
+  border: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+  background-color: #1e8903;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.form-container .ingresa {
+  color: #efefef;
+}
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-container form input[type=text],
+.form-container form input[type=password] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #061700;
+  font-size: "Roboto", sans-serif;
+  color: #efefef;
+  transition: all 0.2s ease-in-out;
+}
+.form-container form input[type=text]:hover, .form-container form input[type=text]:focus,
+.form-container form input[type=password]:hover,
+.form-container form input[type=password]:focus {
+  background-color: rgb(44, 171, 27);
+  color: 0;
+}
+.form-container form button[type=submit] {
+  background-color: #aeb7ac;
+  color: #111;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form-container form button[type=submit]:hover {
+  background-color: #075300;
+}
+.form-container p {
+  font-size: 14px;
+  margin-top: 0;
+}
+.form-container a {
+  color: #C5E6A6;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.form-container a:hover {
+  color: aqua;
 }
 
 /* -------- VISTA MOBILE -------- */
-@media only screen and (min-width: 375px) and (max-width: 812px) {
+@media only screen and (max-width: 767px) {
   /* --------- NAVBAR PARA VISTA MOBILE --------- */
   .logo {
     width: 60px;
@@ -337,7 +373,6 @@ ul {
     display: flex;
     justify-content: center;
   }
-  /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
   /* ------- CARD IMAGES PARA VISTA MOBILE -------- */
   .left-image {
     width: 30px;
@@ -387,188 +422,37 @@ ul {
   }
   /*PAGINA JUGADOR*/
   .form {
-    background-color: #061700;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: -200px;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    width: 70%;
-    height: 400px;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 14px;
   }
-  .form_title {
-    font-size: 1rem;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    color: #ffffff;
-  }
-  .form_paragraph {
-    font-size: 0.8rem;
-    font-weight: 300px;
-    color: #ffffff;
-  }
-  .form_link {
-    font-size: 0.5rem;
-    font-weight: 300px;
-    color: rgb(44, 171, 27);
-  }
-  .form_container {
-    margin-top: 1em;
-    display: grid;
-    gap: 1.5em;
-  }
-  .form_group {
-    position: relative;
-    --color: #5757577e;
-  }
-  .form_input {
-    width: 80%;
-    background: none;
-    color: whitesmoke;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgba(87, 87, 87, 0.4941176471);
-    font-family: "Harmattan", sans-serif;
-  }
-  .form_input:focus + .form_label {
-    transform: translateY(-12px) scale(0.7);
-    transform-origin: left top;
-    color: #fff;
-  }
-  .form_input:focus ~ .form_line {
-    transform: scale(1);
-  }
-  .form_input:not(:placeholder-shown) + .form_label {
-    transform: translateY(-5px) scale(0.7);
-    transform-origin: left top;
-    color: rgb(44, 171, 27);
-  }
-  .form_input:not(:placeholder-shown) ~ .form_line {
-    transform: scale(1);
-  }
-  .form_input.form_input:not(:placeholder-shown) {
-    color: white;
-  }
-  .form_label {
-    color: #efefef;
-    cursor: pointer;
-    position: absolute;
-    left: 600px;
-    transform: translateY(10px);
-    transition: transform 0.5s, color 0.3s;
+  .form label {
     font-size: 12px;
   }
-  .form_submit {
-    background: rgb(44, 171, 27);
-    color: #ffffff;
-    font-family: "Harmattan", sans-serif;
-    text-transform: capitalize;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 0.5em;
-  }
-  .form.line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #0b8600;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s;
-  }
-  /*PAGINA INGRESO*/
-  .contenedoring {
-    display: flex;
-    align-items: center;
-    background-color: #061700;
-  }
-  .contenedoring .registro {
-    color: white;
-    text-align: left;
-    margin-top: 0px;
-    font-size: 2px;
-  }
-  .contenedoring .forming {
-    background-color: white;
-    width: 100rem;
-    margin-left: 50;
-    margin-right: 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  }
-  .contenedoring .labeling {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #3B5834;
-  }
-  .contenedoring .inputing {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  }
-  .contenedoring .buttoning[type=submit] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
-    background-color: #1e8903;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
-  }
-  .contenedoring button[type=submit]:hover {
-    background-color: #2e7417;
-  }
-  .contenedoring .fotoing {
-    width: 50%;
-    height: 40%;
-    border-radius: 10px;
-    margin-right: -15rem;
-  }
-  .contenedoring .fotoing .registro {
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  .form button {
+    font-size: 14px;
   }
   /*PAGINA QUIENES SOMOS*/
   .quienes {
+    position: relative;
     text-align: center;
+    margin-top: 0.313px;
   }
   .quienes .somos {
     font-family: "Harmattan", sans-serif;
-    font-size: 10px;
+    font-size: 2rem !important;
     color: rgb(44, 171, 27);
   }
   .quienes .subt {
     font-family: "Harmattan", sans-serif;
-    font-size: 2rem;
+    font-size: 1rem !important;
     color: white;
   }
   .quienes .parrafo {
+    margin: 2rem;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 200;
     color: #bbbbbb;
+    text-align: justify;
   }
   /* -------- PAGINA INFORMACION ---------*/
   .tabla_info {
@@ -577,53 +461,79 @@ ul {
     height: 50%;
   }
   /* ---------- PAGINA CONTACTO ---------- */
-  .nombre {
-    text-align: center;
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 2px;
   }
-  .formulario {
-    width: 80%;
-    margin-left: 45px;
-    margin-right: 5px;
-    margin-bottom: 40px;
-    margin-top: 4px;
-    text-align: center;
-    font-family: "Fahkwang", sans-serif;
-    font-size: medium;
-    color: white;
+  .contact-form .form-row {
     position: relative;
+    margin-bottom: 2rem;
   }
-  .textoing {
-    font-family: "Fahkwang", sans-serif;
-    font-size: 12px;
-    font-weight: 100;
-  }
-  .textoing #nombre {
-    background-color: #bbbbbb;
-    border-color: #111;
-  }
-  .textoing #Apellido {
-    background-color: #bbbbbb;
-    border-color: #111;
-  }
-  .comentario {
+  .contact-form .form-row input,
+  .contact-form .form-row textarea {
+    display: block;
     width: 100%;
-    margin-top: -150px;
-    height: 120px;
-    font-family: "Fahkwang", sans-serif;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
   }
-  .botonescont {
-    font-family: "Fahkwang", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    margin-top: -20px;
+  .contact-form .form-row input:focus,
+  .contact-form .form-row textarea:focus {
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
-  /* MAPA */
-  .map-responsive {
-    width: 250px;
+  .contact-form .form-row .contact-label {
+    color: #efefef;
+    font-weight: light;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .contact-form .form-row textarea {
+    resize: none;
+    height: 10rem;
+  }
+  .contact-form .button-row {
+    text-align: center;
+  }
+  .contact-form .button-row button[type=submit] {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    background-color: #0099cc;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .contact-form .button-row button[type=submit]:hover {
+    background-color: #007399;
+  }
+  /*MAPA RESPONSIVE*/
+  .map-container {
     height: 200px;
-    position: relative;
-    margin-left: -45px;
-    top: 25px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
   /*PAGINA PLANTILLA*/
   .plantel {
@@ -722,10 +632,69 @@ ul {
     color: #efefef;
     margin: 5px;
   }
+  /*REGISTRO*/
+  * {
+    box-sizing: border-box;
+  }
+  .contenedoring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #061700;
+    width: 100%;
+  }
+  .contenedoring .forming {
+    background-color: white;
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .contenedoring .labeling {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #3B5834;
+  }
+  .contenedoring .inputing {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .contenedoring .buttoning[type=submit] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+    background-color: #1e8903;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .contenedoring button[type=submit]:hover {
+    background-color: #2e7417;
+  }
+  .contenedoring .fotoing {
+    display: none;
+  }
+  .contenedoring .registro {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  /**********************************/
+  /* ------- VISTA TABLET -------- */
+  /*PAGINA LOGIN JUGADOR*/
 }
-/**********************************/
-/* ------- VISTA TABLET -------- */
-@media only screen and (min-width: 768px) and (max-width: 1040px) {
+@media only screen and (max-width: 767px) and (min-width: 769px) and (max-width: 1023px) {
   .logo {
     width: 60px;
     height: 60px;
@@ -750,7 +719,6 @@ ul {
     display: flex;
     justify-content: center;
   }
-  /* FUENTE HARMATTAN USAR PARA FOOTER Y MENU DE NAVEGACION */
   /* ------- CARD IMAGES PARA VISTA TABLET-------- */
   .left-image {
     width: 30px;
@@ -873,12 +841,11 @@ ul {
   .quienes {
     position: relative;
     text-align: center;
-    margin: 8rem;
-    margin-top: 5px;
+    margin-top: 0.313px;
   }
   .quienes .somos {
     font-family: "Harmattan", sans-serif;
-    font-size: 1rem;
+    font-size: px;
     color: rgb(44, 171, 27);
   }
   .quienes .subt {
@@ -887,8 +854,8 @@ ul {
     color: white;
   }
   .quienes .parrafo {
+    margin: 2rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: 200;
     color: #bbbbbb;
     text-align: justify;
   }
@@ -900,55 +867,71 @@ ul {
     height: 300px;
   }
   /* ---------- PAGINA CONTACTO ---------- */
-  .nombre {
-    text-align: center;
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  .formulario {
-    width: 80%;
-    margin-left: 45px;
-    margin-right: 5px;
-    margin-bottom: 40px;
-    margin-top: 4px;
-    text-align: center;
-    font-family: "Fahkwang", sans-serif;
-    font-size: medium;
-    color: white;
+  .contact-form .form-row {
     position: relative;
+    margin-bottom: 2rem;
   }
-  .textoing {
-    font-family: "Fahkwang", sans-serif;
-    font-size: 12px;
-    font-weight: 100;
+  .contact-form .form-row input,
+  .contact-form .form-row textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  .textoing #nombre {
-    background-color: #bbbbbb;
-    border-color: #111;
+  .contact-form .form-row .contact-label {
+    color: #efefef;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
   }
-  .textoing #Apellido {
-    background-color: #bbbbbb;
-    border-color: #111;
+  .contact-form .form-row textarea {
+    resize: none;
+    height: 10rem;
   }
-  .comentario {
-    width: 70%;
-    margin-top: -150px;
-    margin-bottom: 10px;
-    margin-left: 60px;
+  .contact-form .button-row {
+    text-align: center;
+  }
+  .contact-form .button-row button[type=submit] {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    background-color: #0099cc;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .contact-form .button-row button[type=submit]:hover {
+    background-color: #007399;
+  }
+  /*MAPA RESPONSIVE*/
+  .map-container {
     height: 200px;
-    font-family: "Fahkwang", sans-serif;
-    font-style: italic;
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
-  .botonescont {
-    font-family: "Fahkwang", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    margin-left: 60px;
-  }
-  /* MAPA */
-  .map-responsive {
-    width: 400px;
-    height: 200px;
-    right: -30%;
-    top: 25px;
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
   /*PAGINA MEDIA*/
   .gallery {
@@ -969,79 +952,703 @@ ul {
     margin: 10px;
   }
 }
-/*PAGINA JUGADOR*/
-.form_label {
-  margin-left: -570px;
+@media only screen and (max-width: 767px) {
+  form {
+    padding: 10px;
+    margin: 30px;
+    font-size: 16px;
+  }
+  form label {
+    font-size: 14px;
+  }
+  form button {
+    font-size: 16px;
+  }
 }
-
-/*PAGINA INGRESO*/
-.contenedoring {
-  display: flex;
-  align-items: center;
-  background-color: #061700;
+@media only screen and (max-width: 767px) {
+  .form-container {
+    background-color: 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    /* ---------- PIE DE PAGINA -----------*/
+    /*PAGINA INGRESO*/
+    /*VISTA DESKTOP*/
+    /*PLANTILLA CARDS*/
+    /*QUIENES SOMOS*/
+    /*TABLA*/
+  }
+  .form-container:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  .form-container form {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .form-container form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: inherit;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container form input:hover, .form-container form input:focus {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #1E90FF;
+  }
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .form-container button[type=submit] {
+    background-color: #4CAF50;
+    color: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container button[type=submit]:hover {
+    background-color: #3d8b40;
+  }
+  .form-container p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .form-container a {
+    color: #1E90FF;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container a:hover {
+    color: #000;
+  }
+  .form-container .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .form-container .form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-container .form-container form input[type=text],
+  .form-container .form-container form input[type=password] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    font-size: 14px;
+    color: #4CAF50;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container .form-container form input[type=text]:hover, .form-container .form-container form input[type=text]:focus,
+  .form-container .form-container form input[type=password]:hover,
+  .form-container .form-container form input[type=password]:focus {
+    background-color: #4CAF50;
+    color: #4CAF50;
+  }
+  .form-container .form-container form button[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container .form-container form button[type=submit]:hover {
+    background-color: #3d8b40;
+  }
+  .form-container .form-container p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .form-container .form-container a {
+    color: #1E90FF;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container .form-container a:hover {
+    color: #000;
+  }
+  .form-container .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .form-container .contenedoring {
+    display: flex;
+    align-items: center;
+    background-color: #061700;
+  }
+  .form-container .contenedoring .registro {
+    color: white;
+    margin-top: 100px;
+    font-size: 35px;
+  }
+  .form-container .contenedoring .forming {
+    background-color: white;
+    width: 50%;
+    margin-left: 15rem;
+    margin-right: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .form-container .contenedoring .labeling {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #3B5834;
+  }
+  .form-container .contenedoring .inputing {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .form-container .contenedoring .buttoning[type=submit] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+    background-color: #1e8903;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .form-container .contenedoring button[type=submit]:hover {
+    background-color: #2e7417;
+  }
+  .form-container .contenedoring .fotoing {
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    margin-right: -10rem;
+  }
+  .form-container .contenedoring .fotoing .registro {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
 }
-.contenedoring .registro {
-  color: white;
-  margin-top: 100px;
-  font-size: 35px;
+@media only screen and (max-width: 767px) and (min-width: 1024px) {
+  .form-container {
+    /*CARDS*/
+    /*CONTACTO*/
+    /*FOOTER*/
+    /*GALLERIA*/
+    /* HEADER */
+    /*INGRESO*/
+    /*JUGADOR*/
+  }
+  .form-container .left-image {
+    width: 80px;
+  }
+  .form-container .right-image {
+    width: 80px;
+  }
+  .form-container .tarjetasinfo {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 25%;
+  }
+  .form-container .card {
+    transition: 300ms ease-in-out;
+    background-color: #aeb7ac;
+  }
+  .form-container .card:hover {
+    transform: rotate(-4deg);
+    cursor: pointer;
+  }
+  .form-container .card:hover ~ .card {
+    z-index: 1;
+    translate: 60px;
+  }
+  .form-container .card + .card {
+    margin-left: -10%;
+  }
+  .form-container .tablaposiciones {
+    padding: 0;
+    margin-left: 130px;
+    width: 80%;
+    height: 850px;
+    margin-top: 100px;
+  }
+  .form-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .form-container body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  .form-container main {
+    padding: 2rem;
+  }
+  .form-container .contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .form-container .contact-form .form-row {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .form-container .contact-form .form-row input,
+  .form-container .contact-form .form-row textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  .form-container .contact-form .form-row input:focus,
+  .form-container .contact-form .form-row textarea:focus {
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  .form-container .contact-form .form-row .contact-label {
+    color: #efefef;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .form-container .contact-form .form-row textarea {
+    resize: none;
+    height: 10rem;
+  }
+  .form-container .contact-form .button-row {
+    text-align: center;
+  }
+  .form-container .contact-form .button-row button[type=submit] {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    background-color: #0099cc;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .form-container .contact-form .button-row button[type=submit]:hover {
+    background-color: #007399;
+  }
+  .form-container .map-container {
+    height: 400px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .form-container .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .form-container .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+    background-color: #1e8903;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .form-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .form-container .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .form-container .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-container ul {
+    list-style: none;
+  }
+  .form-container .footer {
+    background-color: #0b8600;
+    padding: 70px 0;
+  }
+  .form-container .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .form-container .footer-col h4 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .form-container .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #061700;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .form-container .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .form-container .footer-col ul li a {
+    font-size: 16px;
+    text-transform: none;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .form-container .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .form-container .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .form-container .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #0b8600;
+  }
+  .form-container .footer .derechos {
+    background-color: #061700;
+    padding: 10px 10px;
+    margin-bottom: -75px;
+    text-align: center;
+    color: #fff;
+  }
+  .form-container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-container .gallery .imagengal {
+    width: 30%;
+    height: 30%;
+    transition: all 0.5s ease;
+    filter: grayscale(80%);
+    margin: 5px;
+  }
+  .form-container .imagengal:hover {
+    width: 32%;
+    height: 32%;
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+  .form-container .logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+  }
+  .form-container .fondoheader {
+    background-color: transparent;
+  }
+  .form-container li a {
+    text-transform: uppercase;
+    font-family: "Harmattan", sans-serif;
+  }
+  .form-container .container-fluid {
+    font-size: 25px;
+  }
+  .form-container .colordropdown {
+    background-color: #0b8600;
+  }
+  .form-container header {
+    display: flex;
+    justify-content: center;
+  }
+  .form-container .contenedoring {
+    display: flex;
+    align-items: center;
+    background-color: #061700;
+    padding: 1.25rem;
+  }
+  .form-container .forming {
+    background-color: white;
+    width: 70%;
+    padding: 3.125rem;
+    margin-left: 20rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .form-container .labeling {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #3B5834;
+  }
+  .form-container .inputing {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .form-container .buttoning[type=submit] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+    background-color: #1e8903;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .form-container button[type=submit]:hover {
+    background-color: #2e7417;
+  }
+  .form-container .fotoing {
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    transform: rotate(0deg);
+  }
+  .form-container .fotoing + .registro {
+    margin-left: 30px;
+    text-transform: uppercase;
+    top: 85px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .form-container .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .form-container .form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-container .form-container form input[type=text],
+  .form-container .form-container form input[type=password] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    font-size: 18px;
+    color: red;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container .form-container form input[type=text]:hover, .form-container .form-container form input[type=text]:focus,
+  .form-container .form-container form input[type=password]:hover,
+  .form-container .form-container form input[type=password]:focus {
+    background-color: red;
+    color: 0;
+  }
+  .form-container .form-container form button[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container .form-container form button[type=submit]:hover {
+    background-color: #3d8b40;
+  }
+  .form-container .form-container p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .form-container .form-container a {
+    color: #1E90FF;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .form-container .form-container a:hover {
+    color: #000;
+  }
 }
-.contenedoring .forming {
-  background-color: white;
-  width: 100rem;
-  margin-left: -50;
-  margin-right: 0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+@media only screen and (max-width: 767px) {
+  .form-container .plantel {
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: underline;
+    margin: 5px;
+    color: #C5E6A6;
+  }
 }
-.contenedoring .labeling {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #3B5834;
+@media only screen and (max-width: 767px) {
+  .form-container .grid-container {
+    background-color: linear-gradient(to bottom, #5a784c, #31711a, #0a3000, #000f00);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
 }
-.contenedoring .inputing {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+@media only screen and (max-width: 767px) {
+  .form-container .grid-item {
+    position: relative;
+    width: 20%;
+    margin: 10px;
+    overflow: hidden;
+  }
+  .form-container .grid-item:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  .form-container .grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .form-container .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-container .grid-item .overlay .text {
+    color: #111;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .form-container .grid-item:hover img {
+    transform: scale(1.1);
+  }
+  .form-container .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  .form-container .grid-item:hover .overlay .text {
+    opacity: 1;
+  }
 }
-.contenedoring .buttoning[type=submit] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
-  background-color: #1e8903;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
+@media only screen and (max-width: 767px) {
+  .form-container .quienes {
+    position: relative;
+    text-align: center;
+    margin-top: 0.313px;
+  }
+  .form-container .quienes .somos {
+    font-family: "Harmattan", sans-serif;
+    font-size: 4rem;
+    color: rgb(44, 171, 27);
+  }
+  .form-container .quienes .subt {
+    font-family: "Harmattan", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .form-container .quienes .parrafo {
+    margin: 2rem;
+    font-family: "Open Sans", sans-serif;
+    color: #bbbbbb;
+    text-align: justify;
+  }
 }
-.contenedoring button[type=submit]:hover {
-  background-color: #2e7417;
+@media only screen and (max-width: 767px) {
+  .form-container .tabla_info {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+  }
+  .form-container .tabla_info .puntos {
+    color: white;
+  }
 }
-.contenedoring .fotoing {
-  width: 50%;
-  height: 40%;
-  border-radius: 10px;
-  margin-right: -15rem;
-}
-.contenedoring .fotoing .registro {
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-/* ---------- PIE DE PAGINA -----------*/
-.footer-col {
-  width: 50%;
-  margin-bottom: 30px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -1050,27 +1657,21 @@ ul {
   display: flex;
   align-items: center;
   background-color: #061700;
-  padding: 20px;
-}
-
-.registro {
-  color: white;
-  text-align: center;
-  z-index: 1;
+  padding: 1.25rem;
 }
 
 .forming {
   background-color: white;
-  width: 30%;
-  padding: 50px;
-  margin-left: 300px;
+  width: 70%;
+  padding: 3.125rem;
+  margin-left: 20rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .labeling {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   font-weight: bold;
   color: #3B5834;
 }
@@ -1078,7 +1679,7 @@ ul {
 .inputing {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
@@ -1108,6 +1709,7 @@ button[type=submit]:hover {
   width: 50%;
   height: 40%;
   border-radius: 10px;
+  transform: rotate(0deg);
 }
 
 .fotoing + .registro {
@@ -1219,20 +1821,20 @@ button[type=submit]:hover {
 .quienes {
   position: relative;
   text-align: center;
-  margin: 12.5rem;
   margin-top: 0.313px;
 }
 .quienes .somos {
   font-family: "Harmattan", sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   color: rgb(44, 171, 27);
 }
 .quienes .subt {
   font-family: "Harmattan", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 .quienes .parrafo {
+  margin: 2rem;
   font-family: "Open Sans", sans-serif;
   color: #bbbbbb;
   text-align: justify;
