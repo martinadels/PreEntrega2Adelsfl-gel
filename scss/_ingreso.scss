@@ -1,73 +1,56 @@
+	* {
+		box-sizing: border-box;
+	}
 
-* {
-	box-sizing: border-box;
-}
+	.contenedoring {
+		display: flex;
+		justify-content: center;
+		background-color: $background-color_4;
+		padding: 1.25rem;
 
-.contenedoring {
-    display: flex;
-    align-items: center;
-    background-color: $background-color_4;
-	padding: 1.25rem;
-}
+		.forming {
+			background-color: white;
+			width: 90%;
+			padding: 3.125rem;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+		}
 
+		.labeling {
+			display: block;
+			margin-bottom: 0.625rem;
+			font-weight: bold;
+			color: #3B5834;
+		}
 
-.forming {
-	background-color: white;
-    width: 70%;
-	padding: 3.125rem;
-	margin-left: 20rem;
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
+		.inputing {
+			display: block;
+			width: 100%;
+			padding: 0.625rem;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+		}
 
-.labeling {
-	display: block;
-	margin-bottom: 0.625rem;
-	font-weight: bold;
-	color: #3B5834;
-}
+		.buttoning[type="submit"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+			background-color: #1e8903;
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: background-color 0.2s ease;
+			cursor: pointer;
 
-.inputing {
-	display: block;
-	width: 100%;
-	padding: 0.625rem;
-	margin-bottom: 20px;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-}
+		}
 
-.buttoning[type="submit"] {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	border: none;
-	border-radius: 10px;
-	box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
-	background-color: #1e8903;
-	color: white;
-	font-weight: bold;
-	text-transform: uppercase;
-	transition: background-color 0.2s ease;
-	cursor: pointer;
-}
+		button[type="submit"]:hover {
+			background-color: #2e7417;
+		}
 
-button[type="submit"]:hover {
-	background-color: #2e7417;
-}
-
-.fotoing {
-    width:50%;
-    height: 40%;
-    border-radius: 10px;
-	transform: rotate(0deg);
-
-}
-
-.fotoing + .registro {
-    margin-left: 30px;
-    text-transform: uppercase;
-    top: 85px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-
-}
+	}

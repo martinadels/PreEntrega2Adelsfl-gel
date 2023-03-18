@@ -6,10 +6,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
-    .ingresa{
+
+    .ingresa {
         color: $color_4;
     }
+
     form {
         width: 100%;
         display: flex;
@@ -47,14 +48,15 @@
             transition: all 0.2s ease-in-out;
 
             &:hover {
-                background-color: darken($background-color_2, 10%);
+                background-color: darken($background-color_7, 10%);
             }
         }
     }
 
-    p {
+    .textolog {
         font-size: 14px;
         margin-top: 0;
+        color: $color_4;
     }
 
     a {
@@ -63,8 +65,7 @@
         transition: all 0.2s ease-in-out;
 
         &:hover {
-            color: $color_5;
+            color: $color_1;
         }
     }
 }
-

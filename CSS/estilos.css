@@ -331,11 +331,12 @@ main {
   transition: all 0.2s ease-in-out;
 }
 .form-container form button[type=submit]:hover {
-  background-color: #075300;
+  background-color: rgba(230, 230, 230, 0.2);
 }
-.form-container p {
+.form-container .textolog {
   font-size: 14px;
   margin-top: 0;
+  color: #efefef;
 }
 .form-container a {
   color: #C5E6A6;
@@ -343,11 +344,60 @@ main {
   transition: all 0.2s ease-in-out;
 }
 .form-container a:hover {
-  color: aqua;
+  color: rgb(44, 171, 27);
 }
 
 /* -------- VISTA MOBILE -------- */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  /*REGISTRO PAGINA*/
+  * {
+    box-sizing: border-box;
+  }
+  .contenedoring {
+    display: flex;
+    justify-content: center;
+    background-color: #061700;
+    padding: 1.25rem;
+  }
+  .contenedoring .forming {
+    background-color: white;
+    width: 50%;
+    padding: 3.125rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .contenedoring .labeling {
+    display: block;
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+    color: #3B5834;
+  }
+  .contenedoring .inputing {
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .contenedoring .buttoning[type=submit] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+    background-color: #1e8903;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .contenedoring button[type=submit]:hover {
+    background-color: #2e7417;
+  }
   /* --------- NAVBAR PARA VISTA MOBILE --------- */
   .logo {
     width: 60px;
@@ -632,69 +682,11 @@ main {
     color: #efefef;
     margin: 5px;
   }
-  /*REGISTRO*/
-  * {
-    box-sizing: border-box;
-  }
-  .contenedoring {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #061700;
-    width: 100%;
-  }
-  .contenedoring .forming {
-    background-color: white;
-    width: 100%;
-    padding: 1.25rem;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  }
-  .contenedoring .labeling {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #3B5834;
-  }
-  .contenedoring .inputing {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  }
-  .contenedoring .buttoning[type=submit] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
-    background-color: #1e8903;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
-  }
-  .contenedoring button[type=submit]:hover {
-    background-color: #2e7417;
-  }
-  .contenedoring .fotoing {
-    display: none;
-  }
-  .contenedoring .registro {
-    margin-top: 10px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  }
   /**********************************/
   /* ------- VISTA TABLET -------- */
   /*PAGINA LOGIN JUGADOR*/
 }
-@media only screen and (max-width: 767px) and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (max-width: 767px) and (min-width: 769px) and (max-width: 1023px) {
   .logo {
     width: 60px;
     height: 60px;
@@ -952,7 +944,7 @@ main {
     margin: 10px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   form {
     padding: 10px;
     margin: 30px;
@@ -965,11 +957,10 @@ main {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form-container {
     background-color: 0;
-    border: 1px solid #ccc;
-    padding: 20px;
+    border: none;
     margin: 50px;
     text-align: center;
     font-size: 14px;
@@ -1001,7 +992,7 @@ main {
   .form-container form input:hover, .form-container form input:focus {
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid #1E90FF;
+    border-bottom: 2px solid rgb(44, 171, 27);
   }
   .form-container label {
     display: block;
@@ -1009,8 +1000,9 @@ main {
     font-size: 12px;
   }
   .form-container button[type=submit] {
-    background-color: #4CAF50;
-    color: 16px;
+    background-color: #aeb7ac;
+    color: #111;
+    font-size: 16px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -1018,78 +1010,19 @@ main {
     transition: all 0.2s ease-in-out;
   }
   .form-container button[type=submit]:hover {
-    background-color: #3d8b40;
+    background-color: rgba(230, 230, 230, 0.2);
   }
-  .form-container p {
+  .form-container .textolog {
     font-size: 14px;
     margin-top: 0;
   }
   .form-container a {
-    color: #1E90FF;
+    color: #efefef;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
   .form-container a:hover {
-    color: #000;
-  }
-  .form-container .form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .form-container .form-container form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .form-container .form-container form input[type=text],
-  .form-container .form-container form input[type=password] {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    font-size: 14px;
-    color: #4CAF50;
-    transition: all 0.2s ease-in-out;
-  }
-  .form-container .form-container form input[type=text]:hover, .form-container .form-container form input[type=text]:focus,
-  .form-container .form-container form input[type=password]:hover,
-  .form-container .form-container form input[type=password]:focus {
-    background-color: #4CAF50;
-    color: #4CAF50;
-  }
-  .form-container .form-container form button[type=submit] {
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-  .form-container .form-container form button[type=submit]:hover {
-    background-color: #3d8b40;
-  }
-  .form-container .form-container p {
-    font-size: 18px;
-    margin-top: 0;
-  }
-  .form-container .form-container a {
-    color: #1E90FF;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-  }
-  .form-container .form-container a:hover {
-    color: #000;
+    color: rgb(44, 171, 27);
   }
   .form-container .footer-col {
     width: 50%;
@@ -1492,6 +1425,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    border: none;
   }
   .form-container .form-container form {
     width: 100%;
@@ -1507,20 +1441,20 @@ main {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: red;
-    font-size: 18px;
-    color: red;
+    background-color: #061700;
+    font-size: "Roboto", sans-serif;
+    color: #efefef;
     transition: all 0.2s ease-in-out;
   }
   .form-container .form-container form input[type=text]:hover, .form-container .form-container form input[type=text]:focus,
   .form-container .form-container form input[type=password]:hover,
   .form-container .form-container form input[type=password]:focus {
-    background-color: red;
+    background-color: rgb(44, 171, 27);
     color: 0;
   }
   .form-container .form-container form button[type=submit] {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #aeb7ac;
+    color: #111;
     font-size: 16px;
     padding: 10px 20px;
     border: none;
@@ -1529,22 +1463,22 @@ main {
     transition: all 0.2s ease-in-out;
   }
   .form-container .form-container form button[type=submit]:hover {
-    background-color: #3d8b40;
+    background-color: rgba(230, 230, 230, 0.2);
   }
-  .form-container .form-container p {
+  .form-container .form-container .textolog {
     font-size: 18px;
     margin-top: 0;
   }
   .form-container .form-container a {
-    color: #1E90FF;
+    color: white;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
   .form-container .form-container a:hover {
-    color: #000;
+    color: rgb(44, 171, 27);
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form-container .plantel {
     text-align: center;
     text-transform: uppercase;
@@ -1554,7 +1488,7 @@ main {
     color: #C5E6A6;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form-container .grid-container {
     background-color: linear-gradient(to bottom, #5a784c, #31711a, #0a3000, #000f00);
     display: flex;
@@ -1563,7 +1497,7 @@ main {
     margin: 0;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form-container .grid-item {
     position: relative;
     width: 20%;
@@ -1616,7 +1550,7 @@ main {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form-container .quienes {
     position: relative;
     text-align: center;
@@ -1639,7 +1573,7 @@ main {
     text-align: justify;
   }
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form-container .tabla_info {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -1649,34 +1583,27 @@ main {
     color: white;
   }
 }
-* {
-  box-sizing: border-box;
-}
-
+/*PAGINA REGISTRO*/
 .contenedoring {
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: #061700;
-  padding: 1.25rem;
+  padding: auto;
 }
-
-.forming {
+.contenedoring .forming {
   background-color: white;
   width: 70%;
   padding: 3.125rem;
-  margin-left: 20rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-.labeling {
+.contenedoring .labeling {
   display: block;
   margin-bottom: 0.625rem;
   font-weight: bold;
   color: #3B5834;
 }
-
-.inputing {
+.contenedoring .inputing {
   display: block;
   width: 100%;
   padding: 0.625rem;
@@ -1685,8 +1612,7 @@ main {
   border-radius: 5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
-
-.buttoning[type=submit] {
+.contenedoring .buttoning[type=submit] {
   display: block;
   width: 100%;
   padding: 10px;
@@ -1700,23 +1626,58 @@ main {
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
-
-button[type=submit]:hover {
+.contenedoring button[type=submit]:hover {
   background-color: #2e7417;
 }
 
-.fotoing {
-  width: 50%;
-  height: 40%;
-  border-radius: 10px;
-  transform: rotate(0deg);
+* {
+  box-sizing: border-box;
 }
 
-.fotoing + .registro {
-  margin-left: 30px;
+.contenedoring {
+  display: flex;
+  justify-content: center;
+  background-color: #061700;
+  padding: 1.25rem;
+}
+.contenedoring .forming {
+  background-color: white;
+  width: 90%;
+  padding: 3.125rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.contenedoring .labeling {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-weight: bold;
+  color: #3B5834;
+}
+.contenedoring .inputing {
+  display: block;
+  width: 100%;
+  padding: 0.625rem;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.contenedoring .buttoning[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
+  background-color: #1e8903;
+  color: white;
+  font-weight: bold;
   text-transform: uppercase;
-  top: 85px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.contenedoring button[type=submit]:hover {
+  background-color: #2e7417;
 }
 
 .tabla_info {
