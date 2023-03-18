@@ -33,7 +33,7 @@
             &:hover,
             &:focus {
                 background-color: $color_1;
-                color: blue($color: #000000);
+                color: blue($color: $color_12);
             }
         }
 

@@ -60,7 +60,7 @@ header {
   flex-direction: row;
   justify-content: center;
   gap: 10px;
-  margin-left: 25%;
+  margin-left: 0;
 }
 
 .card {
@@ -176,7 +176,7 @@ ul {
   padding: 10px 10px;
   margin-bottom: -75px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 * {
@@ -318,7 +318,7 @@ main {
 .form-container form input[type=password]:hover,
 .form-container form input[type=password]:focus {
   background-color: rgb(44, 171, 27);
-  color: 0;
+  color: 17;
 }
 .form-container form button[type=submit] {
   background-color: #aeb7ac;
@@ -441,6 +441,9 @@ main {
     margin-top: 50px;
     font-size: 6px;
     margin-left: 25px;
+  }
+  .card-title {
+    font-size: 16px;
   }
   .btn {
     font-size: 8px;
@@ -686,7 +689,7 @@ main {
   /* ------- VISTA TABLET -------- */
   /*PAGINA LOGIN JUGADOR*/
 }
-@media screen and (max-width: 767px) and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (max-width: 767px) and (min-width: 769px) and (max-width: 1020px) {
   .logo {
     width: 60px;
     height: 60px;
@@ -728,7 +731,6 @@ main {
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 6px;
-    margin-left: 100px;
   }
   .btn {
     font-size: 8px;
@@ -1641,7 +1643,7 @@ main {
   padding: 1.25rem;
 }
 .contenedoring .forming {
-  background-color: white;
+  background-color: #fff;
   width: 90%;
   padding: 3.125rem;
   border-radius: 10px;
@@ -1669,15 +1671,15 @@ main {
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 139, 10, 0.2);
-  background-color: #1e8903;
-  color: white;
+  background-color: #0b8600;
+  color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
 .contenedoring button[type=submit]:hover {
-  background-color: #2e7417;
+  background-color: #0b8600;
 }
 
 .tabla_info {
